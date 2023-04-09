@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>评测 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E8%AF%84%E6%B5%8B/</link>
+    <description>Recent content in 评测 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Dec 2021 08:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E8%AF%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快捷键键盘&amp;AHK</title>
+      <link>https://4xu.xyz/p/%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%94%AE%E7%9B%98ahk/</link>
+      <pubDate>Thu, 09 Dec 2021 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%94%AE%E7%9B%98ahk/</guid>
+      <description>众所皆知，与电脑软件打交道避免不了各式各样的快捷键，向来是左手键盘快捷键，右手鼠标愉快的在电脑上玩耍，直到我拿笔往数位板上涂的时候，才发现了一个一直忽视的事实
+由于我是个左撇子，所以只能用右手控制快捷键，但键盘摆在下方，数位板则在桌面上，两只手时常会陷入到左右互博，这是个相当别扭的姿势，而且右手按那些快捷键也不怎么轻松愉快，凭啥快捷键用左手！为啥不用右手！右手没手权吗！气抖冷，右手何时站起来
+于是乎我将目光投向市面上可编辑宏的机械键盘，不过都不太满意，一来桌面位置不够，剩余空间之余十几厘米，而哪怕是61键盘都要28cm了，二来机械键盘厚度2~4cm，长时间使用太累手，三 键盘布局是“QWERTY”式，对右手来说不好形成肌肉记忆
+后来我转念一想，只要有ahk与改键工具，你的下一块键盘有何必是键盘呢，豁然开朗的我开始摸索现有不同输入设备
+那些年用过的输入设备 蓝牙小键盘 这是上一块平板的馈赠，优点是体积小，有蓝牙，缺点键太密集，一点都不好按，电量维持不了多久，而且不改键不好用，改了键又会影响原来的键盘布局，所以就pass掉
+xbox手柄与xpadder 手柄是买来推galgamesteam的，肩键与十字键按起来很有质感，按键众多，但放在桌子使用与握住它使用是两回事，厚度导致手无论是侧握还是趴着使用，都不是太舒服，pass掉
+数字键盘与ahk 寻找之下数字键盘十分契合我的需求，无论怎么改键都不会影响到左边的字母键盘，虽然按键有点少，但配合数位板的按键，勉强够用
+数字键盘2.0 在用过一段时间后，绘画进入上色阶段后，由于需要调色与调整图层，键数目变得不怎么够用，加上数位板按键实在是太硬，每次按的时候都带有谜之音效，于是另购一块34键的数字键盘，虽然需要50多块rmb，不过胜在布局合理
+如无意外这应该是终极方案了，不过最近对旋钮有点兴趣，至于其他输入设备像tourbox,ergodox等，没用过不做评价,但感觉缺乏性价比
+AHK AHK是款强大改键软件，
+1.由于只想将快捷键只在ps与sai中发挥作用，所以可以这么写
+#If WinActive(&amp;#34;ahk_exe sai2.exe&amp;#34;) || WinActive(&amp;#34;ahk_exe Photoshop.exe&amp;#34;) Numpad4::^s #If 2.numlock有两种状态，可以强制设置为 &amp;ldquo;AlwaysOn&amp;rdquo; 或 &amp;ldquo;AlwaysOff&amp;rdquo;
+3.在软件经常用到，复制粘贴，所以直接集成一个键
+NumpadAdd:: send ^c send ^v return 4.手残缘故老是要撤销许多次，所以把shift h改为按一下就会不停ctrl z，再按一下就停止
++h::	{ Send,^z } { v_Enable:=!v_Enable If (v_Enable=0) { SetTimer, Label0, Off } Else { SetTimer, Label0, 250 } } Return Label0: { Send,^z } return </description>
+    </item>
+    
+    <item>
+      <title>小新pad</title>
+      <link>https://4xu.xyz/p/%E5%B0%8F%E6%96%B0pad/</link>
+      <pubDate>Fri, 06 Aug 2021 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/%E5%B0%8F%E6%96%B0pad/</guid>
+      <description>最近发觉服役多年venue 8平板电池鼓包了，于是寻思换一台，平板对我来说就只有两种win或ipad，不过价格都不太美丽，刚好小新pad降价899，虽然是安卓，不过我只用来steam串流，所以果断下单。
+快递有点慢，开箱，不怎么好看的包装 拆出来康康，一眼看上去还行，配件只有数据线和充电头 瞧瞧背面，不是整体一块的 venue 与小新pad 使用一段时间后，总体还行，对得起这个价格，不过steamlink分辨率很奇怪，所以用成moonlight，续航能用7、8个小时，最近买了一支普通触控笔，发觉能用来画画草图，虽然写不了小字，没什么压感，没有防误触。</description>
+    </item>
+    
+    <item>
+      <title>雷蛇炼狱蝰蛇V2迷你版</title>
+      <link>https://4xu.xyz/p/%E9%9B%B7%E8%9B%87%E7%82%BC%E7%8B%B1%E8%9D%B0%E8%9B%87v2%E8%BF%B7%E4%BD%A0%E7%89%88/</link>
+      <pubDate>Thu, 22 Jul 2021 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/%E9%9B%B7%E8%9B%87%E7%82%BC%E7%8B%B1%E8%9D%B0%E8%9B%87v2%E8%BF%B7%E4%BD%A0%E7%89%88/</guid>
+      <description>本来打算买法器的，后来在某个深夜突然进入了贤者模式，于是想想还是算了，刚好之前的双飞燕鼠标用得手指发痛，看到雷蛇鼠标打折，顺势购买。
+开箱，平平无奇的盒子 拆出来康康，发觉真的很轻，缺乏手感 会发光的logo，相当刺眼 有软件可以设置宏和灯光与侧键 然而并没什么卵用，因为没有板载内存，只要一退出软件，就会恢复默认，不过对我来说，不用软件，可以用ahk嘛，虽然对灯光没办法。
+;侧键ahk设置 XButton1::^c XButton2::^v 用过一段时间后，鼠标滑动比较流畅，不会像双飞燕有莫名卡顿，但鼠标滚轮滚起来很刺手。手不算太大，但用起来还是有点小，不过最难受还是高度太低，导致不能完全贴合手掌。
+3个月后更新，鼠标滚轮有异响</description>
+    </item>
+    
+    <item>
+      <title>红米k40</title>
+      <link>https://4xu.xyz/p/k40/</link>
+      <pubDate>Wed, 26 May 2021 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/k40/</guid>
+      <description>最近发觉手机电池鼓包了，打算换一部手机，刚好看到k40不用耍猴还附送蓝牙耳机，于是买了最丐的6+128g版本。
+狗东又很快送货到了，迅速开箱 手机实物，观感还可以 略微突出摄像头 附送的蓝牙耳机 一直没有接触过蓝牙耳机，以为蓝牙耳机是无线充电，心想牛逼啊，能把无线充电做到这么小，直到我拿出耳机，发现有充电触点 太久没接触过新手机，到手的k40看起来还行，不过看久眼睛总有点累，上网一查才知道是频闪问题 因为低亮度为pwm调光，又没有防频闪模式，所以会闪瞎狗眼，第一反应就想退货，后来想想还是算了，就认为它自带防沉迷系统好了，反正现在手机用得不是太多了。实在忍不了频闪，可以在酷安下载屏幕滤镜，或者在显示-色彩风格-高级模式把rgb值调到最低，在把亮度调到71%，不过高亮度下oled屏幕烧屏可能性大大增加。
+网上说的绿屏没有遇到，至于其他嘛，耗电更新系统后还可以，如果像我佛系使用可以用到50h，没有未来黑科技耳机孔十分遗憾。最初冲着miui与主题，后面使用起来大失所望，只有小爱训练录屏还算有点意思，不过无法识别打字；还有主题差评，迟早做出主题自己用。</description>
+    </item>
+    
+  </channel>
+</rss>

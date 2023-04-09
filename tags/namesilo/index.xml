@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>namesilo on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/namesilo/</link>
+    <description>Recent content in namesilo on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jan 2022 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/namesilo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>waline评论通知与域名邮箱</title>
+      <link>https://4xu.xyz/p/waline%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5%E4%B8%8E%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
+      <pubDate>Sun, 30 Jan 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/waline%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5%E4%B8%8E%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
+      <description>域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问 陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功 waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
+直到有了域名邮箱后，再配置评论通知依然没反应，眉头一皱，发觉事情并不简单，在环境变量处填了几个排列组合后，其静如渊沉
+摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下 vercel日志 可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。</description>
+    </item>
+    
+  </channel>
+</rss>

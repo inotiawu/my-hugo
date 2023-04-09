@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rss on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/rss/</link>
+    <description>Recent content in rss on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jun 2021 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>来点rss订阅</title>
+      <link>https://4xu.xyz/p/rss1/</link>
+      <pubDate>Wed, 09 Jun 2021 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/rss1/</guid>
+      <description>为了减少我的摸鱼，开始思考下时间一般用在哪里，浏览网页应该占了大部分，那
+打开各种网页时间==摸鱼时间
+减少打开网页时间，估计你也想到了，就是rss嘛，不止作为信息聚合，还可以抑制我想打开网页的焦虑，在大学就曾听过了rss，不过缺少可定制rss源，最近发觉有rsshub，妙啊，于是开始做点路由。
+简单的做路由有createfeed，不过限制偏多，文章数目也只有5，复杂的直接用rsshub做好了，虽然不太懂，但我从来不生产代码，只是代码搬运工，所以有以下代码
+const got = require(&amp;#39;@/utils/got&amp;#39;); const cheerio = require(&amp;#39;cheerio&amp;#39;); module.exports = async (ctx) =&amp;gt; { const response = await got({ method: &amp;#39;get&amp;#39;, url: &amp;#39;https://bgm.tv/timeline&amp;#39;, //做订阅的链接 }); const data = response.data; const $ = cheerio.load(data); const list = $(&amp;#39;.tml_item&amp;#39;); //重复的条目 ctx.state.data = { title: &amp;#39;时间线&amp;#39;, link: &amp;#39;https://bgm.tv/timeline&amp;#39;, item: list &amp;amp;&amp;amp; list .map((index, item) =&amp;gt; { item = $(item); if(item.find(&amp;#39;.info&amp;#39;).text().indexOf(&amp;#34;注册&amp;#34;)==-1 &amp;amp;&amp;amp; item.find(&amp;#39;.info&amp;#39;).text().indexOf(&amp;#34;成为了&amp;#34;) ==-1){ description= `${item.find(&amp;#39;.info&amp;#39;).html()}`; title=item.find(&amp;#39;.info&amp;#39;).text(); link=$(item.find(&amp;#39;.info a&amp;#39;)[2]).attr(&amp;#39;href&amp;#39;); } return { title: title, description: description, link: link }; }) .</description>
+    </item>
+    
+  </channel>
+</rss>

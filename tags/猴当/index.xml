@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>猴当 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E7%8C%B4%E5%BD%93/</link>
+    <description>Recent content in 猴当 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2022 11:04:44 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E7%8C%B4%E5%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双十一买了啥</title>
+      <link>https://4xu.xyz/p/20221111/</link>
+      <pubDate>Sun, 13 Nov 2022 11:04:44 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/20221111/</guid>
+      <description>又到双11了，照例先买盒电池 书 书还剩下不少没读，但看书习惯轮流读不同的国家，今年看完几本后，中日小说只剩下一两本，所以看看猴当有什么活动
+猴当虽有300-160的活动，但容易抢80优惠券折扣范围好低，而范围广的优惠券则只能在app或小程序上抢，不依赖脚本，哪怕是单身多年的手速都不一定能抢到
+所以到狗东上看看， 啊这，双倍的快乐 还行吧，加起来有三折，于是拿起了祖传的ahk脚本
+$F3:: SetTimer, Closeclick, 3 return $F4:: Pause Closeclick: Click 291,512 sleep 1 Click 497,633 第一天真是大吃一🐋，连脚本都抢不到，好在第二天都拿到了，快递也在两天后到达 又有二十多本书，足够看到后年了
+手柄 一直想买个开源掌机串流，不过那价格性能实在是劝退，继续物色手机手柄时，发现了下列这个 这个手柄怎么说呢，相当烂，按键手感很迷，摇杆像垫片，附带的充电线还是坏的，不过还算便宜，也足够轻，关闭蓝牙的时候，手柄也会自动关掉，算是个人性化设计了 另外问题是手柄夹角就那么大，躺着使用的话角度还是太小了，而且这个角度仅靠重力固定，只要没有持平，就会掉下来 但在购买之前，看着它那光滑的中间，有个大胆想法，之前购买过xbox手柄夹，然xbox手柄委实太重，这个夹很快吃灰了 所以把这俩一合体，角度就可以变化了 卖给我真是亏了 躺着玩手臂酸问题解决了，但重量集中在上部，现在轮到手指不是太舒适，而且离被砸仅有个胶垫的距离 </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>花瓣 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E8%8A%B1%E7%93%A3/</link>
+    <description>Recent content in 花瓣 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Oct 2022 00:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E8%8A%B1%E7%93%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notion花瓣图片更新</title>
+      <link>https://4xu.xyz/p/notionupdate/</link>
+      <pubDate>Tue, 04 Oct 2022 00:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/notionupdate/</guid>
+      <description>前几个月花瓣网突然抄袭了pinterest更新网站，一直以为影响不大，直到最近浏览notion的花瓣时，才发现了花瓣网也开启了防盗链，于是寻思着把notion上的图片链接改为自己的图床
+不过notion api一贯不太好用，只好f12查找需要的block 再保存为json文件
+1.先提取block内的图片链接
+代码 import requests import json filepath1 = &amp;quot;k:/office/py/爬虫/花瓣/插画.json&amp;quot; with open(filepath1, &amp;quot;r&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as f: row_data=json.loads(f.readline()) a=0 while a &amp;lt; 200: i=row_data[&amp;quot;result&amp;quot;][&amp;quot;reducerResults&amp;quot;][&amp;quot;collection_group_results&amp;quot;][&amp;quot;blockIds&amp;quot;][a] block=row_data[&#39;recordMap&#39;][&#39;block&#39;][i][&amp;quot;value&amp;quot;][&amp;quot;content&amp;quot;][0] links=row_data[&#39;recordMap&#39;][&#39;block&#39;][block][&amp;quot;value&amp;quot;][&amp;quot;properties&amp;quot;][&amp;quot;title&amp;quot;][0][0] with open(&amp;quot;k:/office/py/爬虫/花瓣/p-block.csv&amp;quot;, &amp;quot;a&amp;quot;,encoding=&amp;quot;utf-8&amp;quot;, newline=&amp;quot;&amp;quot;)as fo: fo.write(block+&amp;quot;,&amp;quot;+links+&amp;quot;,&amp;quot;+i+&amp;quot;\n&amp;quot;) a+=1 提取出来大致是这样 花瓣链接要整理下 但如果图片超过200个，那么只能先提取block，在根据api提取图片链接
+代码 import requests import json import csv import time class photo(): def add_photo(urls): r = requests.request( &amp;quot;GET&amp;quot;, &amp;quot;https://api.notion.com/v1/blocks/&amp;quot;+urls, headers={&amp;quot;Authorization&amp;quot;: &amp;quot;Bearer &amp;quot; + &amp;quot;自己token&amp;quot;, &amp;quot;Notion-Version&amp;quot;: &amp;quot;2022-02-22&amp;quot;}, ) row_data=json.loads(r.text) print(r.text) time.sleep(5) try: i=row_data[&amp;quot;image&amp;quot;][&amp;quot;external&amp;quot;][&amp;quot;url&amp;quot;] b=row_data[&amp;quot;parent&amp;quot;][&amp;quot;page_id&amp;quot;] with open(&amp;quot;k:/office/py/爬虫/花瓣/插画3-block.</description>
+    </item>
+    
+    <item>
+      <title>从pinbox到notion再到notion api</title>
+      <link>https://4xu.xyz/p/notion/</link>
+      <pubDate>Wed, 26 Jan 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/notion/</guid>
+      <description>两年前，为了便于浏览各个网站的收藏文章，于是把它们都整合到pinbox这个软件上，然而整合完自己都忘了。直到最近又有收藏文章的需求，打开它一瞧，除了多了个收费外基本没什么变化，后来发现用邀请码可以创建多级收藏夹，心安理得的继续白嫖，没过多久，估计白嫖多级收藏夹的事被知道了，明明没有达到收藏上限，却再也无法创建新收藏了，虽然一年会员费也不贵，但pinbox略带简陋的界面以及两年来几乎没变化的功能，请容许我拒绝 pinbox界面 开始了寻找替代pinbox软件，起初想自部署笔记软件，但功能太少了，自己又没有服务器，想想还是算了，后来找到了notion，虽然是笔记软件，但完美的契合了要求，notion介绍功能网上很多，懒得说了，感觉这款软件最大的亮点在于白嫖模块化 pinbox笑我贫穷，我笑它不懂死宅 notion api 事情到这里，一般就结束了，无非是换了个软件罢了，但某天躺平在床上刷着豆瓣，偶然发现了notion原来有api的，垂死病中惊坐起，在用过notion功能后，一直想把花瓣网的图片和网易云的歌单导入进去，在看到有api后，开启了折腾之旅
+notion api可以结合python使用，python以前从没写过，后来看了下有点像node.js爬虫，仰仗贫瘠的js知识与捉急的智商，抄袭借鉴Notion → 支付宝&amp;amp;微信 → 账单里的代码，头发少了几根后，恼恨愉悦开启爬虫之旅
+然而一开始就有问题了，写代码常有的事，输入pip install requests解决
+接着又发现notion api怪得很，用图片链接一定要求有后缀，而花瓣网图片恰恰是链接显示的，还能不能愉快地玩耍 后来思考notion支持导入markdown文件，那先把图片链接保存为md文件，在导入到notion中，再根据api更新里面链接，测试可行后，就先开始爬虫花瓣网
+花瓣网 花瓣网虽然有tag功能，但却没有排除关键字搜索，这样找起图片来诸多不易， 花瓣谜一般的搜索功能 notion的筛选 1.图片链接与信息汇总
+简单来说就是为每一个图片链接保存为md文件，再把图片中的tag，花瓣链接，源地址保存到汇总.csv中
+代码 import os import requests import re headers={ &amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&amp;#39;, &amp;#39;X-Request&amp;#39;: &amp;#39;JSON&amp;#39;, &amp;#34;cookie&amp;#34;:&amp;#34;cookie&amp;#34; } req = requests.get(url = &amp;#34;画板链接&amp;#34;,headers=headers) htmlPage = req.content for p in range(1,25): prog = re.compile(r&amp;#39;&amp;#34;pins&amp;#34;.*&amp;#39;) appPins = prog.findall(htmlPage.decode(&amp;#34;utf-8&amp;#34;)) null = None true = True result = eval(appPins[0][7:-2]) images = [] for i in result: info = &amp;#34;!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>购书 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E8%B4%AD%E4%B9%A6/</link>
+    <description>Recent content in 购书 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2022 11:04:44 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E8%B4%AD%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双十一买了啥</title>
+      <link>https://4xu.xyz/p/20221111/</link>
+      <pubDate>Sun, 13 Nov 2022 11:04:44 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/20221111/</guid>
+      <description>又到双11了，照例先买盒电池 书 书还剩下不少没读，但看书习惯轮流读不同的国家，今年看完几本后，中日小说只剩下一两本，所以看看猴当有什么活动
+猴当虽有300-160的活动，但容易抢80优惠券折扣范围好低，而范围广的优惠券则只能在app或小程序上抢，不依赖脚本，哪怕是单身多年的手速都不一定能抢到
+所以到狗东上看看， 啊这，双倍的快乐 还行吧，加起来有三折，于是拿起了祖传的ahk脚本
+$F3:: SetTimer, Closeclick, 3 return $F4:: Pause Closeclick: Click 291,512 sleep 1 Click 497,633 第一天真是大吃一🐋，连脚本都抢不到，好在第二天都拿到了，快递也在两天后到达 又有二十多本书，足够看到后年了
+手柄 一直想买个开源掌机串流，不过那价格性能实在是劝退，继续物色手机手柄时，发现了下列这个 这个手柄怎么说呢，相当烂，按键手感很迷，摇杆像垫片，附带的充电线还是坏的，不过还算便宜，也足够轻，关闭蓝牙的时候，手柄也会自动关掉，算是个人性化设计了 另外问题是手柄夹角就那么大，躺着使用的话角度还是太小了，而且这个角度仅靠重力固定，只要没有持平，就会掉下来 但在购买之前，看着它那光滑的中间，有个大胆想法，之前购买过xbox手柄夹，然xbox手柄委实太重，这个夹很快吃灰了 所以把这俩一合体，角度就可以变化了 卖给我真是亏了 躺着玩手臂酸问题解决了，但重量集中在上部，现在轮到手指不是太舒适，而且离被砸仅有个胶垫的距离 </description>
+    </item>
+    
+    <item>
+      <title>购书抢券记录</title>
+      <link>https://4xu.xyz/p/buybook2021421/</link>
+      <pubDate>Fri, 23 Apr 2021 07:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/buybook2021421/</guid>
+      <description>去年觉醒了看书的兴趣后，在今年4.23决定买些实体书存货，不料活动力度实在不足，去年四月初猴当就有三折了，今年直到18号晚才有一次，然而被购物车价格临时变动阴到了，可耻的没有抢到。
+虽然猴当有2.5折的卷，然而做法相当618，双11式， 抢券需要一定量赏金，赏金获得需要逛商城，签到，非常繁琐，不想做。
+狗东篇
+听说狗东也有活动了，去看看有什么券，发现300-50 奇怪的券 第一反应感觉奇怪，去年三三折券一般为600-100，配合100-50活动，可以做到三三折。不过300-50也可以做到三三折，想着没差多少，不错了，没想到的是这里面有个坑等着我。
+接着又是极度不友好的零点抢券，心中一晒，尔等怎么抢得过单身多年的手速。零点后，可耻的又没有抢到，这不科学，这一定是脚本，要用魔法打败魔法，虽然我不懂js，但我懂点ahk，于是码了下字
+；简单的脚本 $F3:: SetTimer, Closeclick, 100 return $F4:: Pause Closeclick: Click 617,1041 sleep 20 Click 473,654 想着是这下稳了，然而第二天中午依然没抢到券，（⊙ｏ⊙）！！！！ 你们的手速是单身了多少年，100ms的脚本都抢不过。不急，100ms不行，3ms总行了吧
+；3ms的脚本 $F3:: SetTimer, Closeclick, 3 return $F4:: Pause Closeclick: Click 617,1041 sleep 1 Click 473,654 晚上，总算抢到了，在狗东挑了几本后，发觉不对劲，以往就只有100-50的活动，现在多了个五折的活动，而且书大多参与的是五折的活动，如果你用抢到券买五折的书，别说三三折了，都快4.5折了。嗯，狗东这操作可以呀，说不定就是想让抢到券自动放弃，虽然狗东你在大气层，但我在电离层，只要我想凑，就可以做到三三折 书也很快到了，一本没塑封差评
+猴当篇
+23号，听说猴当有3-1优惠码，继续码脚本
+；只会用if 的渣渣 SetTimer, monkeydang, 40 return $F4:: Pause return monkeydang: PixelGetColor, color, 266,620 if (color != &amp;#34;0xFFFFFF&amp;#34;){ Click 213,620,2 sleep 10 send ^c sleep 10 clipboard=%clipboard% if (clipboard = &amp;#34;优惠&amp;#34;){ click 172,616 click 201,620 clipboard=&amp;#34;&amp;#34; }else{ Click 881,881 Pause } }else{ PixelGetColor, nextcolor, 104,598 if(nextcolor = &amp;#34;0x3c46FF&amp;#34;){ Click 898,946 Pause }else{ PixelGetColor, color, 266,620 } } 晚上零点用，发觉图书不适用，这才发现了套路很深很深 假如出现其他活动基本上就用不了 删删改改，总算弄完了，偶然用脚本抢到码，又发现有图书不适用，而且特别鸡贼的是，猴当不告诉你那本不适用，只能自己找不同 后浏览图书才发现下面两张图</description>
+    </item>
+    
+  </channel>
+</rss>

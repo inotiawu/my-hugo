@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>乐谱 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E4%B9%90%E8%B0%B1/</link>
+    <description>Recent content in 乐谱 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2022 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E4%B9%90%E8%B0%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用mt3扒谱</title>
+      <link>https://4xu.xyz/p/mt3/</link>
+      <pubDate>Sun, 01 May 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/mt3/</guid>
+      <description>以前有摸过几个月吉他，现在虽没吉他可弹，但还是喜欢把一些大都是galgamebgm转为吉他谱，不过在扒谱过程中，人菜瘾大的我即使勉强听出音阶，对曲子里的大小调，和弦，复调可所谓是毫无办法。后来发现如果有六线谱，那再转换为吉他谱会便利很多，思考着如果有扒谱软件岂不是更妙，仰仗着ai训练的风靡，逛黄油论坛时找到了mt3模型可用于扒谱
+huggingface里面原来调用mt3模型出现了bug，于是稍微改了下，自己部署了一份
+部署与稍微改了下 首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对 把原来代码复制后，看了下原来的错误日志，有这么一行
+WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available. 那我直接在app.py ctrl+v
+os.system(&amp;#34;python3 -m pip install --upgrade pip&amp;#34;) 错误的地方还有
+File &amp;#34;app.py&amp;#34;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &amp;#39;t5x.partitioning&amp;#39; has no attribute &amp;#39;ModelBasedPjitPartitioner&amp;#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
+self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions， 发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
+self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 食用过程 首先打开这个网址，将音乐格式转为wav 接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载 至于打谱软件直接用win10商店中的musescore 3 虽说谱不能百分百准确，但对我来说相对够用</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分辨率 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+    <description>Recent content in 分辨率 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jan 2022 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E5%88%86%E8%BE%A8%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magpie</title>
+      <link>https://4xu.xyz/p/magpie/</link>
+      <pubDate>Mon, 24 Jan 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/magpie/</guid>
+      <description>虽然是逐渐4k的年代，但galgame业界依然保持720p的优良传统，更不用说远古时代的800*600，玩是能玩，但看起来像近视似的。直到最近发现了magpie这款可以将游戏分辨率放大软件，起初不以为意，还以为是通过插值算法放大的，即使能放大，边缘估计像图片ai放大那样模糊；即使够清晰，消耗资源一定很多，后来试用了下，效果拔群，不仅够清晰，占用也很低。
+以下几张效果图 使用前 ~ 使用后 ~ 使用前 ~ 使用后 ~ 使用前 ~ 使用后 ~ 软件打开的样子 当然啦，眼睛如果不是太列文虎克的话，可能看不出有什么区别，具体内容可以去github一观</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>路由器 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</link>
+    <description>Recent content in 路由器 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2022 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>路由器刷固件</title>
+      <link>https://4xu.xyz/p/pandavan/</link>
+      <pubDate>Mon, 02 May 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/pandavan/</guid>
+      <description>去年买了个红米ac2100路由器，用到现在虽然偶尔会断流，影响不大，就没搭理它，不过最近时不时会降网速，300m变为100m，这就不能忍了，决定刷固件
+依据这篇教程2022最新红米AC2100路由器刷Pandavan教程,只要CTRL c v键没坏就能成功
+然而网速100m问题依旧，查看pandavan后台以太网链路状态只有100m，眉头一皱，发觉事情并不简单，后来发现是网线的另一端松动 解决网线后，由于算是三级路由，只能接ap模式，才会有ipv6 但接完ap模式要管理后台，这就要到接光纤的路由里面查找ip，一般显示为？号 看看有什么变化，灯变成一盏了 网速比之前慢了点 之前 现在 </description>
+    </item>
+    
+    <item>
+      <title>双十一买了啥</title>
+      <link>https://4xu.xyz/p/%E5%8F%8C%E5%8D%81%E4%B8%80%E4%B9%B0%E4%BA%86%E5%95%A5/</link>
+      <pubDate>Sun, 14 Nov 2021 11:04:44 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/%E5%8F%8C%E5%8D%81%E4%B8%80%E4%B9%B0%E4%BA%86%E5%95%A5/</guid>
+      <description>狗东这次快递有点慢，和中通的快递差不多同时到达，
+每年都会白嫖的小米电池 之前网速升级到300m了，寻思着买一个5g路由器，浏览了商品，琳琅满目，wifi6啦，mesh啦，好容易挑了一个，双十一非但不降价，反而升价了，说好的打折呢，人与人的信任在哪，看了下是在狗东，哦，遂释然，于是就选了红米ac2100，虽听说有断流，不过可以折腾刷固件，觉得还行就它了
+拆了下快递，包装盒还真是大 路由器真容 抠门的lan口 直插网线，测测网速 ▲5g测试 ▲隔着楼板测试 测试ipv6，发觉没有,打开自带的ipv6功能，测试又显示
+你已经有 IPv6 地址了,但你的浏览器不太愿意用,这一点比较令人担心
+以我有限的知识考虑，这时候把它变成交换机就可以了，尝试用网线插lan口，关掉dhcp功能等都没什么效果,后来在工作模式转为有线中继模式，直接叫交换机不行吗，让我整了半天 再次测试ipv6 先不打算刷机，一个月后再考虑，伊拉克成色已包浆的水星路由器正式退役 </description>
+    </item>
+    
+  </channel>
+</rss>

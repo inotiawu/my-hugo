@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2022 20:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>路由器刷固件</title>
+      <link>https://4xu.xyz/p/pandavan/</link>
+      <pubDate>Mon, 02 May 2022 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/pandavan/</guid>
+      <description>去年买了个红米ac2100路由器，用到现在虽然偶尔会断流，影响不大，就没搭理它，不过最近时不时会降网速，300m变为100m，这就不能忍了，决定刷固件
+依据这篇教程2022最新红米AC2100路由器刷Pandavan教程,只要CTRL c v键没坏就能成功
+然而网速100m问题依旧，查看pandavan后台以太网链路状态只有100m，眉头一皱，发觉事情并不简单，后来发现是网线的另一端松动 解决网线后，由于算是三级路由，只能接ap模式，才会有ipv6 但接完ap模式要管理后台，这就要到接光纤的路由里面查找ip，一般显示为？号 看看有什么变化，灯变成一盏了 网速比之前慢了点 之前 现在 </description>
+    </item>
+    
+  </channel>
+</rss>

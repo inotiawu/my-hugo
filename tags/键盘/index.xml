@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>键盘 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E9%94%AE%E7%9B%98/</link>
+    <description>Recent content in 键盘 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Dec 2021 08:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E9%94%AE%E7%9B%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快捷键键盘&amp;AHK</title>
+      <link>https://4xu.xyz/p/%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%94%AE%E7%9B%98ahk/</link>
+      <pubDate>Thu, 09 Dec 2021 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%94%AE%E7%9B%98ahk/</guid>
+      <description>众所皆知，与电脑软件打交道避免不了各式各样的快捷键，向来是左手键盘快捷键，右手鼠标愉快的在电脑上玩耍，直到我拿笔往数位板上涂的时候，才发现了一个一直忽视的事实
+由于我是个左撇子，所以只能用右手控制快捷键，但键盘摆在下方，数位板则在桌面上，两只手时常会陷入到左右互博，这是个相当别扭的姿势，而且右手按那些快捷键也不怎么轻松愉快，凭啥快捷键用左手！为啥不用右手！右手没手权吗！气抖冷，右手何时站起来
+于是乎我将目光投向市面上可编辑宏的机械键盘，不过都不太满意，一来桌面位置不够，剩余空间之余十几厘米，而哪怕是61键盘都要28cm了，二来机械键盘厚度2~4cm，长时间使用太累手，三 键盘布局是“QWERTY”式，对右手来说不好形成肌肉记忆
+后来我转念一想，只要有ahk与改键工具，你的下一块键盘有何必是键盘呢，豁然开朗的我开始摸索现有不同输入设备
+那些年用过的输入设备 蓝牙小键盘 这是上一块平板的馈赠，优点是体积小，有蓝牙，缺点键太密集，一点都不好按，电量维持不了多久，而且不改键不好用，改了键又会影响原来的键盘布局，所以就pass掉
+xbox手柄与xpadder 手柄是买来推galgamesteam的，肩键与十字键按起来很有质感，按键众多，但放在桌子使用与握住它使用是两回事，厚度导致手无论是侧握还是趴着使用，都不是太舒服，pass掉
+数字键盘与ahk 寻找之下数字键盘十分契合我的需求，无论怎么改键都不会影响到左边的字母键盘，虽然按键有点少，但配合数位板的按键，勉强够用
+数字键盘2.0 在用过一段时间后，绘画进入上色阶段后，由于需要调色与调整图层，键数目变得不怎么够用，加上数位板按键实在是太硬，每次按的时候都带有谜之音效，于是另购一块34键的数字键盘，虽然需要50多块rmb，不过胜在布局合理
+如无意外这应该是终极方案了，不过最近对旋钮有点兴趣，至于其他输入设备像tourbox,ergodox等，没用过不做评价,但感觉缺乏性价比
+AHK AHK是款强大改键软件，
+1.由于只想将快捷键只在ps与sai中发挥作用，所以可以这么写
+#If WinActive(&amp;#34;ahk_exe sai2.exe&amp;#34;) || WinActive(&amp;#34;ahk_exe Photoshop.exe&amp;#34;) Numpad4::^s #If 2.numlock有两种状态，可以强制设置为 &amp;ldquo;AlwaysOn&amp;rdquo; 或 &amp;ldquo;AlwaysOff&amp;rdquo;
+3.在软件经常用到，复制粘贴，所以直接集成一个键
+NumpadAdd:: send ^c send ^v return 4.手残缘故老是要撤销许多次，所以把shift h改为按一下就会不停ctrl z，再按一下就停止
++h::	{ Send,^z } { v_Enable:=!v_Enable If (v_Enable=0) { SetTimer, Label0, Off } Else { SetTimer, Label0, 250 } } Return Label0: { Send,^z } return </description>
+    </item>
+    
+  </channel>
+</rss>
