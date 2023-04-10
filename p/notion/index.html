@@ -88,7 +88,7 @@
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -105,7 +105,7 @@
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -127,7 +127,7 @@
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -405,22 +405,22 @@
 <p>简单来说就是为每一个图片链接保存为md文件，再把图片中的tag，花瓣链接，源地址保存到汇总.csv中</p>
 <details>
  <summary>代码</summary>
-<pre tabindex="0"><code>import os
+<pre><code>import os
 import requests
 import re
 
 headers={
-    &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;,
-        &#39;X-Request&#39;: &#39;JSON&#39;,
-    &#34;cookie&#34;:&#34;cookie&#34;
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+        'X-Request': 'JSON',
+    &quot;cookie&quot;:&quot;cookie&quot;
 }
-req = requests.get(url = &#34;画板链接&#34;,headers=headers)
+req = requests.get(url = &quot;画板链接&quot;,headers=headers)
 htmlPage = req.content
 
         
 for p in range(1,25):
-  prog = re.compile(r&#39;&#34;pins&#34;.*&#39;)
-  appPins = prog.findall(htmlPage.decode(&#34;utf-8&#34;))
+  prog = re.compile(r'&quot;pins&quot;.*')
+  appPins = prog.findall(htmlPage.decode(&quot;utf-8&quot;))
 
   null = None       
   true = True
@@ -429,23 +429,23 @@ for p in range(1,25):
   
   for i in result:
      
-    info = &#34;![](&#34;+&#34;https://hbimg.huabanimg.com/&#34; + str(i[&#34;file&#34;][&#34;key&#34;])+&#34;_fw236/format/webp)&#34;+&#34;\n&#34;+&#34;![](&#34;+&#34;https://hbimg.huabanimg.com/&#34; + str(i[&#34;file&#34;][&#34;key&#34;])+&#34;)&#34;
+    info = &quot;![](&quot;+&quot;https://hbimg.huabanimg.com/&quot; + str(i[&quot;file&quot;][&quot;key&quot;])+&quot;_fw236/format/webp)&quot;+&quot;\n&quot;+&quot;![](&quot;+&quot;https://hbimg.huabanimg.com/&quot; + str(i[&quot;file&quot;][&quot;key&quot;])+&quot;)&quot;
     
-    with open(&#34;E:/office/py/爬虫/&#34;+ str(i[&#39;pin_id&#39;]) +&#34;.md&#34;, &#34;a&#34;,encoding=&#34;utf-8&#34;, newline=&#34;&#34;)as f:
-        f.write(str(info)+&#34;\n&#34;)
-    tagnull= str(i[&#34;tags&#34;])
-    if tagnull.count(&#34;,&#34;)&gt;4:
+    with open(&quot;E:/office/py/爬虫/&quot;+ str(i['pin_id']) +&quot;.md&quot;, &quot;a&quot;,encoding=&quot;utf-8&quot;, newline=&quot;&quot;)as f:
+        f.write(str(info)+&quot;\n&quot;)
+    tagnull= str(i[&quot;tags&quot;])
+    if tagnull.count(&quot;,&quot;)&gt;4:
       tagnull= tagnull[0:24]
-    while tagnull.count(&#34;,&#34;) &lt; 4:
-     tagnull=  tagnull+&#34;,null&#34;
-    with open(&#34;E:/office/py/爬虫/花瓣汇总.csv&#34;, &#34;a&#34;,encoding=&#34;utf-8&#34;, newline=&#34;&#34;)as fo:
-         linknull=str(i[&#34;link&#34;])
-         if linknull== &#34;&#34;:
-          linknull=&#34;None&#34;
-         fo.write(str(i[&#39;pin_id&#39;]) +&#34;,&#34;+ tagnull.replace(&#34;[]&#34;, &#34;null&#34;).replace(&#34;[&#34;, &#34;&#34;).replace(&#34;]&#34;, &#34;&#34;).replace(&#34;&#39;&#34;, &#34;&#34;)+&#34;,&#34;+ &#34;https://huaban.com/pins/&#34;+ str(i[&#39;pin_id&#39;])+&#34;,&#34;+linknull+&#34;\n&#34;)
-    images.append(i[&#39;pin_id&#39;])
+    while tagnull.count(&quot;,&quot;) &lt; 4:
+     tagnull=  tagnull+&quot;,null&quot;
+    with open(&quot;E:/office/py/爬虫/花瓣汇总.csv&quot;, &quot;a&quot;,encoding=&quot;utf-8&quot;, newline=&quot;&quot;)as fo:
+         linknull=str(i[&quot;link&quot;])
+         if linknull== &quot;&quot;:
+          linknull=&quot;None&quot;
+         fo.write(str(i['pin_id']) +&quot;,&quot;+ tagnull.replace(&quot;[]&quot;, &quot;null&quot;).replace(&quot;[&quot;, &quot;&quot;).replace(&quot;]&quot;, &quot;&quot;).replace(&quot;'&quot;, &quot;&quot;)+&quot;,&quot;+ &quot;https://huaban.com/pins/&quot;+ str(i['pin_id'])+&quot;,&quot;+linknull+&quot;\n&quot;)
+    images.append(i['pin_id'])
     
-    htmlPage = requests.get(url = &#34;加载链接前缀&#34; + str(images[-1]) + &#34;&amp;limit=20&amp;wfl=1&#34;,headers=headers).content
+    htmlPage = requests.get(url = &quot;加载链接前缀&quot; + str(images[-1]) + &quot;&amp;limit=20&amp;wfl=1&quot;,headers=headers).content
 </code></pre></details>
 值得注意的是瀑布流加载链接的地址
 
@@ -535,15 +535,16 @@ for p in range(1,25):
 </figure>
 
 将md导入到notion，需要获取每张图的page-id，这也是notion api奇怪的原因，无法从api获取到所有page-id，也不用爬虫，直接写点js了事</p>
-<pre tabindex="0"><code> function notion(){
+<pre><code> function notion(){
     a=0
   while (a &lt;206){
-   var links= document.getElementsByClassName(&#39;notion-selectable notion-page-block notion-collection-item&#39;)[a].firstElementChild.href.slice(41)
+   var links= document.getElementsByClassName('notion-selectable notion-page-block notion-collection-item')[a].firstElementChild.href.slice(41)
     a+=1
     console.log(links) 
   }
   
 }
+
 </code></pre>
 <figure >
     
@@ -555,26 +556,26 @@ for p in range(1,25):
 <p>将page-id 与汇总进行匹配</p>
 <details>
  <summary>代码</summary>
-<pre tabindex="0"><code>import csv
+<pre><code>import csv
 
 
 
 
-filepath = &#34;E:/office/py/date/花瓣汇总.csv&#34;
-filepath2 = &#34;E:/office/py/date/notionlink.csv&#34;
+filepath = &quot;E:/office/py/date/花瓣汇总.csv&quot;
+filepath2 = &quot;E:/office/py/date/notionlink.csv&quot;
 
 names1=[]
 tags=[]
 names2=[]
 links=[]
-fo = open(&#34;E:/office/py/date/test.txt&#34;, &#34;w&#34;,encoding=&#34;utf-8&#34;)
+fo = open(&quot;E:/office/py/date/test.txt&quot;, &quot;w&quot;,encoding=&quot;utf-8&quot;)
 
-with open(filepath, &#34;r&#34;, encoding=&#34;utf-8&#34;, newline=&#34;&#34;) as f:
+with open(filepath, &quot;r&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as f:
     csvreader = csv.reader(f)
     for row1 in csvreader:
      names1.append(row1[0])
-     tags.append(row1[1] + &#34;,&#34;+row1[2]+ &#34;,&#34;+row1[3]+ &#34;,&#34;+row1[4]+ &#34;,&#34;+row1[5]+ &#34;,&#34;+row1[6]+ &#34;,&#34;+row1[7])
-with open(filepath2, &#34;r&#34;, encoding=&#34;utf-8&#34;, newline=&#34;&#34;) as f:
+     tags.append(row1[1] + &quot;,&quot;+row1[2]+ &quot;,&quot;+row1[3]+ &quot;,&quot;+row1[4]+ &quot;,&quot;+row1[5]+ &quot;,&quot;+row1[6]+ &quot;,&quot;+row1[7])
+with open(filepath2, &quot;r&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as f:
     csvreader1 = csv.reader(f)
     for row2 in csvreader1:
       names2.append(row2[0])
@@ -584,8 +585,9 @@ a=0
 while a &lt; 数目:
     pageid= names2.index(names1[a])
     seq=[links[pageid],tags[a]]
-    fo.write(str(seq).replace(&#34;[&#34;, &#34;&#34;).replace(&#34;]&#34;, &#34;&#34;).replace(&#34;&#39;&#34;, &#34;&#34;)+&#34;\n&#34;)
+    fo.write(str(seq).replace(&quot;[&quot;, &quot;&quot;).replace(&quot;]&quot;, &quot;&quot;).replace(&quot;'&quot;, &quot;&quot;)+&quot;\n&quot;)
     a+=1
+
 </code></pre></details>
 <p>匹配过后
 
@@ -600,11 +602,11 @@ while a &lt; 数目:
 <p>绕了半天，终于能根据路径.csv直接更新页面</p>
 <details>
  <summary>代码</summary>
-<pre tabindex="0"><code>import requests
+<pre><code>import requests
 import csv
 
 
-filepath2 = &#34;E:/office/py/date/路径.csv&#34;
+filepath2 = &quot;E:/office/py/date/路径.csv&quot;
 pageid=[]
 tag1=[]
 tag2=[]
@@ -614,7 +616,7 @@ tag5=[]
 links=[]
 link2=[]
 a=0
-with open(filepath2, &#34;r&#34;, encoding=&#34;utf-8&#34;, newline=&#34;&#34;) as f:
+with open(filepath2, &quot;r&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as f:
     csvreader1 = csv.reader(f)
     for row2 in csvreader1:
       tag1.append(row2[1])
@@ -630,29 +632,29 @@ class notionDemo():
     def add_bill(a):
         body = {
      
-        &#34;properties&#34;: {
+        &quot;properties&quot;: {
            
-            &#34;Tags&#34;: {&#34;multi_select&#34;: [{
-                    &#34;name&#34;:tag1[a],
+            &quot;Tags&quot;: {&quot;multi_select&quot;: [{
+                    &quot;name&quot;:tag1[a],
                 },
                 {
-                    &#34;name&#34;: tag2[a],
+                    &quot;name&quot;: tag2[a],
                     },
                 {
-                    &#34;name&#34;: tag3[a],
+                    &quot;name&quot;: tag3[a],
                     },
                 {
-                    &#34;name&#34;: tag4[a],
+                    &quot;name&quot;: tag4[a],
                     },
                 {
-                    &#34;name&#34;: tag5[a],
+                    &quot;name&quot;: tag5[a],
                     },
                ]},
-            &#34;link&#34;: {
-			     &#34;url&#34;: links[a],
+            &quot;link&quot;: {
+			     &quot;url&quot;: links[a],
 		        },  
-            &#34;源站&#34;: {
-			     &#34;url&#34;: link2[a],
+            &quot;源站&quot;: {
+			     &quot;url&quot;: link2[a],
 		        },  
              },
        
@@ -662,10 +664,10 @@ class notionDemo():
       
         
         r = requests.request(
-            &#34;Patch&#34;,
-            &#34;https://api.notion.com/v1/pages/&#34;+pageid[a],
+            &quot;Patch&quot;,
+            &quot;https://api.notion.com/v1/pages/&quot;+pageid[a],
             json=body,
-            headers={&#34;Authorization&#34;: &#34;Bearer &#34; + &#34;自己token&#34;, &#34;Notion-Version&#34;: &#34;2021-05-13&#34;},
+            headers={&quot;Authorization&quot;: &quot;Bearer &quot; + &quot;自己token&quot;, &quot;Notion-Version&quot;: &quot;2021-05-13&quot;},
             )
         print(r.text)
 
@@ -673,6 +675,7 @@ a = 0
 while a &lt; 数目:
     notionDemo.add_bill(a)
     a+=1
+
 </code></pre></details>
 写完后，还是熟悉的
 
@@ -724,32 +727,32 @@ while a &lt; 数目:
 </p>
 <details>
  <summary>代码</summary>
-<pre tabindex="0"><code>import os
+<pre><code>import os
 from sys import argv
 import requests
 import re
 import json
 
 headers={
-    &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;,
-        &#39;X-Request&#39;: &#39;JSON&#39;,
-    &#34;cookie&#34;:&#34;自己的cookies&#34;
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+        'X-Request': 'JSON',
+    &quot;cookie&quot;:&quot;自己的cookies&quot;
 }
 
-req = requests.get(url = &#34;https://自部署api/playlist/track/all?id=歌单链接&#34;,headers=headers).content.decode(&#39;utf-8&#39;)
+req = requests.get(url = &quot;https://自部署api/playlist/track/all?id=歌单链接&quot;,headers=headers).content.decode('utf-8')
 
 
 response_dict=json.loads(req)
 
-song=response_dict[&#34;songs&#34;]
+song=response_dict[&quot;songs&quot;]
 
 for i in song:
 
- with open(&#34;E:/office/py/爬虫/网易云/我喜欢的音乐.csv&#34;, &#34;a&#34;,encoding=&#34;utf-8&#34;, newline=&#34;&#34;)as fo:
-   # 这里面有个中括号不知道怎么对付，应该可以写成i[&#34;ar&#34;][0][&#34;name&#34;]
-   ar=str(i[&#39;ar&#39;]).replace(&#34;[{&#39;id&#39;: &#34;,&#34;&#34;).replace(&#34;&#39;name&#39;:&#34;,&#34;&#34;).replace(&#34;&#39;&#39;&#39;:&#34;,&#34;&#34;).replace(&#34; &#39;tns&#39;: [], &#39;alias&#39;: []}]&#34;,&#34;&#34;).replace(&#34;&#39;&#34;,&#34;&#34;).replace(&#34; &#34;,&#34;&#34;)
+ with open(&quot;E:/office/py/爬虫/网易云/我喜欢的音乐.csv&quot;, &quot;a&quot;,encoding=&quot;utf-8&quot;, newline=&quot;&quot;)as fo:
+   # 这里面有个中括号不知道怎么对付，应该可以写成i[&quot;ar&quot;][0][&quot;name&quot;]
+   ar=str(i['ar']).replace(&quot;[{'id': &quot;,&quot;&quot;).replace(&quot;'name':&quot;,&quot;&quot;).replace(&quot;''':&quot;,&quot;&quot;).replace(&quot; 'tns': [], 'alias': []}]&quot;,&quot;&quot;).replace(&quot;'&quot;,&quot;&quot;).replace(&quot; &quot;,&quot;&quot;)
    
-   fo.write(str(i[&#34;name&#34;]).replace(&#34;,&#34;,&#34;-&#34;)+&#34;,&#34;+&#34;https://music.163.com/#/song?id=&#34;+str(i[&#34;id&#34;])+&#34;,&#34;+str(i[&#39;al&#39;][&#39;name&#39;]).replace(&#34;,&#34;,&#34;-&#34;)+&#34;,&#34;+&#34;https://music.163.com/#/album?id=&#34;+str(i[&#39;al&#39;][&#39;id&#39;])+&#34;,&#34;+str(i[&#39;al&#39;][&#39;picUrl&#39;])+&#34;,&#34;+ar+&#34;\n&#34;)
+   fo.write(str(i[&quot;name&quot;]).replace(&quot;,&quot;,&quot;-&quot;)+&quot;,&quot;+&quot;https://music.163.com/#/song?id=&quot;+str(i[&quot;id&quot;])+&quot;,&quot;+str(i['al']['name']).replace(&quot;,&quot;,&quot;-&quot;)+&quot;,&quot;+&quot;https://music.163.com/#/album?id=&quot;+str(i['al']['id'])+&quot;,&quot;+str(i['al']['picUrl'])+&quot;,&quot;+ar+&quot;\n&quot;)
 </code></pre></details>
 接下来又是熟悉的
 
@@ -773,7 +776,7 @@ for i in song:
 <p>值得注意的是要先创建模板，比如要添加专辑这一内容，那先要再notion创建专辑</p>
 <details>
  <summary>代码</summary>
-<pre tabindex="0"><code>from os import path
+<pre><code>from os import path
 import requests
 import csv
 import arrow
@@ -781,40 +784,40 @@ import arrow
 class notionDemo():
     def add_bill(a,b,c,d,e,f,g):
         body = {
-        &#34;parent&#34;: {&#34;database_id&#34;: &#34;自己的database&#34;},
-            &#34;properties&#34;: {
+        &quot;parent&quot;: {&quot;database_id&quot;: &quot;自己的database&quot;},
+            &quot;properties&quot;: {
             
-            &#34;Name&#34;: {&#34;title&#34;: [{&#34;type&#34;: &#34;text&#34;, &#34;text&#34;: {&#34;content&#34;: b}}]},
-            &#34;专辑&#34;: {&#34;type&#34;: &#34;rich_text&#34;,	
-                    &#34;rich_text&#34;: [{
-		                &#34;type&#34;: &#34;text&#34;,
-				        &#34;text&#34;: {
-					      &#34;content&#34;: c,
-				       	&#34;link&#34;: {&#34;url&#34;: d}
+            &quot;Name&quot;: {&quot;title&quot;: [{&quot;type&quot;: &quot;text&quot;, &quot;text&quot;: {&quot;content&quot;: b}}]},
+            &quot;专辑&quot;: {&quot;type&quot;: &quot;rich_text&quot;,	
+                    &quot;rich_text&quot;: [{
+		                &quot;type&quot;: &quot;text&quot;,
+				        &quot;text&quot;: {
+					      &quot;content&quot;: c,
+				       	&quot;link&quot;: {&quot;url&quot;: d}
 				         },}]},
-            &#34;name&#34;: {&#34;type&#34;: &#34;rich_text&#34;,	
-                    &#34;rich_text&#34;: [{
-		                &#34;type&#34;: &#34;text&#34;,
-				        &#34;text&#34;: {
-					      &#34;content&#34;: a,
-				       	&#34;link&#34;: {&#34;url&#34;: b}
+            &quot;name&quot;: {&quot;type&quot;: &quot;rich_text&quot;,	
+                    &quot;rich_text&quot;: [{
+		                &quot;type&quot;: &quot;text&quot;,
+				        &quot;text&quot;: {
+					      &quot;content&quot;: a,
+				       	&quot;link&quot;: {&quot;url&quot;: b}
 				         },}]},
-            &#34;歌手&#34;: {&#34;type&#34;: &#34;rich_text&#34;,	
-                    &#34;rich_text&#34;: [{
-		                &#34;type&#34;: &#34;text&#34;,
-				        &#34;text&#34;: {
-					      &#34;content&#34;: g,
-				       	&#34;link&#34;: {&#34;url&#34;: &#34;https://music.163.com/#/artist?id=&#34;+f}
+            &quot;歌手&quot;: {&quot;type&quot;: &quot;rich_text&quot;,	
+                    &quot;rich_text&quot;: [{
+		                &quot;type&quot;: &quot;text&quot;,
+				        &quot;text&quot;: {
+					      &quot;content&quot;: g,
+				       	&quot;link&quot;: {&quot;url&quot;: &quot;https://music.163.com/#/artist?id=&quot;+f}
 				         },}]},
             
-            &#34;封面&#34;: {
+            &quot;封面&quot;: {
 			
-			&#34;type&#34;: &#34;files&#34;,
-			&#34;files&#34;: [{
-				&#34;name&#34;: e,
-				&#34;type&#34;: &#34;external&#34;,
-				&#34;external&#34;: {
-					&#34;url&#34;: e
+			&quot;type&quot;: &quot;files&quot;,
+			&quot;files&quot;: [{
+				&quot;name&quot;: e,
+				&quot;type&quot;: &quot;external&quot;,
+				&quot;external&quot;: {
+					&quot;url&quot;: e
 				}
 			}]
 		},
@@ -822,19 +825,19 @@ class notionDemo():
         
     }
         r = requests.request(
-            &#34;POST&#34;,
-            &#34;https://api.notion.com/v1/pages&#34;,
+            &quot;POST&quot;,
+            &quot;https://api.notion.com/v1/pages&quot;,
             json=body,
-            headers={&#34;Authorization&#34;: &#34;Bearer &#34; + &#34;自己token&#34;, &#34;Notion-Version&#34;: &#34;2021-05-13&#34;},
+            headers={&quot;Authorization&quot;: &quot;Bearer &quot; + &quot;自己token&quot;, &quot;Notion-Version&quot;: &quot;2021-05-13&quot;},
             )
         print(r.text)
 
    
 
    
-filepath=&#34;E:/office/py/爬虫/网易云/我喜欢的音乐.csv&#34;
+filepath=&quot;E:/office/py/爬虫/网易云/我喜欢的音乐.csv&quot;
 
-with open(filepath, &#34;r&#34;, encoding=&#34;utf-8&#34;, newline=&#34;&#34;) as f:
+with open(filepath, &quot;r&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as f:
     csvreader1 = csv.reader(f)
     for row2 in csvreader1:
         a=row2[0]
@@ -845,6 +848,7 @@ with open(filepath, &#34;r&#34;, encoding=&#34;utf-8&#34;, newline=&#34;&#34;) a
         f=row2[5]
         g=row2[6]
         notionDemo.add_bill(a,b,c,d,e,f,g)
+
 </code></pre></details>
 <p>接下来仍是熟悉的
 

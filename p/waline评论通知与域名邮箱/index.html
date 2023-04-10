@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问 陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功 waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问  陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功  waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
 直到有了域名邮箱后，再配置评论通知依然没反应，眉头一皱，发觉事情并不简单，在环境变量处填了几个排列组合后，其静如渊沉
-摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下 vercel日志 可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。'><title>waline评论通知与域名邮箱</title>
+摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下   vercel日志     可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。'><title>waline评论通知与域名邮箱</title>
 
 <link rel='canonical' href='https://4xu.xyz/p/waline%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5%E4%B8%8E%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='waline评论通知与域名邮箱'>
-<meta property='og:description' content='域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问 陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功 waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
+<meta property='og:description' content='域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问  陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功  waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
 直到有了域名邮箱后，再配置评论通知依然没反应，眉头一皱，发觉事情并不简单，在环境变量处填了几个排列组合后，其静如渊沉
-摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下 vercel日志 可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。'>
+摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下   vercel日志     可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。'>
 <meta property='og:url' content='https://4xu.xyz/p/waline%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5%E4%B8%8E%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/'>
 <meta property='og:site_name' content='四序、片羽与摸鱼力学'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='软件' /><meta property='article:tag' content='配置' /><meta property='article:tag' content='vercel' /><meta property='article:tag' content='namesilo' /><meta property='article:published_time' content='2022-01-30T20:19:48&#43;08:00'/><meta property='article:modified_time' content='2022-01-30T20:19:48&#43;08:00'/><meta property='og:image' content='https://gh.4xu.xyz/d/team/blogimage/softwave/walinemail/20220209205120.jpg' />
 <meta name="twitter:title" content="waline评论通知与域名邮箱">
-<meta name="twitter:description" content="域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问 陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功 waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
+<meta name="twitter:description" content="域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问  陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功  waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
 直到有了域名邮箱后，再配置评论通知依然没反应，眉头一皱，发觉事情并不简单，在环境变量处填了几个排列组合后，其静如渊沉
-摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下 vercel日志 可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。"><meta name="twitter:card" content="summary_large_image">
+摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下   vercel日志     可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://gh.4xu.xyz/d/team/blogimage/softwave/walinemail/20220209205120.jpg' />
     <link rel="shortcut icon" href="https://gh.4xu.xyz/d/team/blogimage/img/20210417204733.jpg" />
 <meta name="baidu-site-verification" content="code-QYxntsyr97" />
@@ -94,7 +94,7 @@
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -111,7 +111,7 @@
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -133,7 +133,7 @@
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

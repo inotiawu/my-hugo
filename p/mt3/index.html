@@ -3,36 +3,36 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='以前有摸过几个月吉他，现在虽没吉他可弹，但还是喜欢把一些大都是galgamebgm转为吉他谱，不过在扒谱过程中，人菜瘾大的我即使勉强听出音阶，对曲子里的大小调，和弦，复调可所谓是毫无办法。后来发现如果有六线谱，那再转换为吉他谱会便利很多，思考着如果有扒谱软件岂不是更妙，仰仗着ai训练的风靡，逛黄油论坛时找到了mt3模型可用于扒谱
 huggingface里面原来调用mt3模型出现了bug，于是稍微改了下，自己部署了一份
-部署与稍微改了下 首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对 把原来代码复制后，看了下原来的错误日志，有这么一行
+部署与稍微改了下    首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对  把原来代码复制后，看了下原来的错误日志，有这么一行
 WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available. 那我直接在app.py ctrl&#43;v
-os.system(&amp;#34;python3 -m pip install --upgrade pip&amp;#34;) 错误的地方还有
-File &amp;#34;app.py&amp;#34;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &amp;#39;t5x.partitioning&amp;#39; has no attribute &amp;#39;ModelBasedPjitPartitioner&amp;#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
-self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions， 发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
-self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 食用过程 首先打开这个网址，将音乐格式转为wav 接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载 至于打谱软件直接用win10商店中的musescore 3 虽说谱不能百分百准确，但对我来说相对够用'><title>用mt3扒谱</title>
+os.system(&amp;quot;python3 -m pip install --upgrade pip&amp;quot;) 错误的地方还有
+ File &amp;quot;app.py&amp;quot;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &#39;t5x.partitioning&#39; has no attribute &#39;ModelBasedPjitPartitioner&#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
+ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions，  发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
+ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)  食用过程 首先打开这个网址，将音乐格式转为wav  接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载  至于打谱软件直接用win10商店中的musescore 3  虽说谱不能百分百准确，但对我来说相对够用'><title>用mt3扒谱</title>
 
 <link rel='canonical' href='https://4xu.xyz/p/mt3/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='用mt3扒谱'>
 <meta property='og:description' content='以前有摸过几个月吉他，现在虽没吉他可弹，但还是喜欢把一些大都是galgamebgm转为吉他谱，不过在扒谱过程中，人菜瘾大的我即使勉强听出音阶，对曲子里的大小调，和弦，复调可所谓是毫无办法。后来发现如果有六线谱，那再转换为吉他谱会便利很多，思考着如果有扒谱软件岂不是更妙，仰仗着ai训练的风靡，逛黄油论坛时找到了mt3模型可用于扒谱
 huggingface里面原来调用mt3模型出现了bug，于是稍微改了下，自己部署了一份
-部署与稍微改了下 首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对 把原来代码复制后，看了下原来的错误日志，有这么一行
+部署与稍微改了下    首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对  把原来代码复制后，看了下原来的错误日志，有这么一行
 WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available. 那我直接在app.py ctrl&#43;v
-os.system(&amp;#34;python3 -m pip install --upgrade pip&amp;#34;) 错误的地方还有
-File &amp;#34;app.py&amp;#34;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &amp;#39;t5x.partitioning&amp;#39; has no attribute &amp;#39;ModelBasedPjitPartitioner&amp;#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
-self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions， 发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
-self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 食用过程 首先打开这个网址，将音乐格式转为wav 接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载 至于打谱软件直接用win10商店中的musescore 3 虽说谱不能百分百准确，但对我来说相对够用'>
+os.system(&amp;quot;python3 -m pip install --upgrade pip&amp;quot;) 错误的地方还有
+ File &amp;quot;app.py&amp;quot;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &#39;t5x.partitioning&#39; has no attribute &#39;ModelBasedPjitPartitioner&#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
+ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions，  发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
+ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)  食用过程 首先打开这个网址，将音乐格式转为wav  接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载  至于打谱软件直接用win10商店中的musescore 3  虽说谱不能百分百准确，但对我来说相对够用'>
 <meta property='og:url' content='https://4xu.xyz/p/mt3/'>
 <meta property='og:site_name' content='四序、片羽与摸鱼力学'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='软件' /><meta property='article:tag' content='音乐' /><meta property='article:tag' content='代码' /><meta property='article:tag' content='爬虫' /><meta property='article:tag' content='乐谱' /><meta property='article:published_time' content='2022-05-01T20:19:48&#43;08:00'/><meta property='article:modified_time' content='2022-05-01T20:19:48&#43;08:00'/><meta property='og:image' content='https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201801.jpg' />
 <meta name="twitter:title" content="用mt3扒谱">
 <meta name="twitter:description" content="以前有摸过几个月吉他，现在虽没吉他可弹，但还是喜欢把一些大都是galgamebgm转为吉他谱，不过在扒谱过程中，人菜瘾大的我即使勉强听出音阶，对曲子里的大小调，和弦，复调可所谓是毫无办法。后来发现如果有六线谱，那再转换为吉他谱会便利很多，思考着如果有扒谱软件岂不是更妙，仰仗着ai训练的风靡，逛黄油论坛时找到了mt3模型可用于扒谱
 huggingface里面原来调用mt3模型出现了bug，于是稍微改了下，自己部署了一份
-部署与稍微改了下 首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对 把原来代码复制后，看了下原来的错误日志，有这么一行
+部署与稍微改了下    首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对  把原来代码复制后，看了下原来的错误日志，有这么一行
 WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available. 那我直接在app.py ctrl&#43;v
-os.system(&amp;#34;python3 -m pip install --upgrade pip&amp;#34;) 错误的地方还有
-File &amp;#34;app.py&amp;#34;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &amp;#39;t5x.partitioning&amp;#39; has no attribute &amp;#39;ModelBasedPjitPartitioner&amp;#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
-self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions， 发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
-self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 食用过程 首先打开这个网址，将音乐格式转为wav 接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载 至于打谱软件直接用win10商店中的musescore 3 虽说谱不能百分百准确，但对我来说相对够用"><meta name="twitter:card" content="summary_large_image">
+os.system(&amp;quot;python3 -m pip install --upgrade pip&amp;quot;) 错误的地方还有
+ File &amp;quot;app.py&amp;quot;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &#39;t5x.partitioning&#39; has no attribute &#39;ModelBasedPjitPartitioner&#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
+ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions，  发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
+ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)  食用过程 首先打开这个网址，将音乐格式转为wav  接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载  至于打谱软件直接用win10商店中的musescore 3  虽说谱不能百分百准确，但对我来说相对够用"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201801.jpg' />
     <link rel="shortcut icon" href="https://gh.4xu.xyz/d/team/blogimage/img/20210417204733.jpg" />
 <meta name="baidu-site-verification" content="code-QYxntsyr97" />
@@ -109,7 +109,7 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -126,7 +126,7 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -148,7 +148,7 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -333,36 +333,36 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
   首先打开huggingface官网，创建new space
 <p>这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对
 
-  <figure >
-      
-          <img src="" class="lazyload"  onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201759.jpg" width="80%"  />
-      
-      
-  </figure>
+<figure >
+    
+        <img src="" class="lazyload"  onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201759.jpg" width="80%"  />
+    
+    
+</figure>
 </p>
 <p>把原来代码复制后，看了下原来的错误日志，有这么一行</p>
-<pre tabindex="0"><code>WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available.
+<pre><code>WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available.
 </code></pre><p>那我直接在app.py ctrl+v</p>
-<pre tabindex="0"><code>os.system(&#34;python3 -m pip install --upgrade pip&#34;)
+<pre><code>os.system(&quot;python3 -m pip install --upgrade pip&quot;)
 </code></pre><p>错误的地方还有</p>
-<pre tabindex="0"><code> File &#34;app.py&#34;, line 88, in __init__
+<pre><code> File &quot;app.py&quot;, line 88, in __init__
   self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner(
-AttributeError: module &#39;t5x.partitioning&#39; has no attribute &#39;ModelBasedPjitPartitioner&#39;
+AttributeError: module 't5x.partitioning' has no attribute 'ModelBasedPjitPartitioner'
 </code></pre><p>度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行</p>
-<pre tabindex="0"><code>   self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner(
+<pre><code>   self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner(
       model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)
 </code></pre><p>直接到github<a class="link" href="https://github.com/magenta/mt3"  target="_blank" rel="noopener"
     >mt3</a>搜索参数，num_partitions，
 
-  <figure >
-      
-          <img src="" class="lazyload"  onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201804.jpg" width=""  />
-      
-      
-  </figure>
+<figure >
+    
+        <img src="" class="lazyload"  onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/blogimage/softwave/mt3/20220502201804.jpg" width=""  />
+    
+    
+</figure>
 </p>
 <p>发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署</p>
-<pre tabindex="0"><code>   self.partitioner = t5x.partitioning.PjitPartitioner(
+<pre><code>   self.partitioner = t5x.partitioning.PjitPartitioner(
       model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)
 </code></pre></details>
 <h4 id="食用过程">食用过程</h4>

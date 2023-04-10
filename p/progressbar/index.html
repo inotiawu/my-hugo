@@ -88,7 +88,7 @@
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -105,7 +105,7 @@
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -127,7 +127,7 @@
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -318,15 +318,15 @@
 </p>
 <p>本想着直接抄了事，然而在用主题并不支持jq，又要写头疼的js</p>
 <p>在<strong>themes\hugo-theme-stack\layouts\partials\article\components\footer.html</strong>输入</p>
-<pre tabindex="0"><code>&lt;script&gt;
+<pre><code>&lt;script&gt;
     (function() {
-      var current_progress = document.getElementsByClassName(&#34;current-progress&#34;);
-      var dynamic = document.getElementsByClassName(&#34;dynamic&#34;);
+      var current_progress = document.getElementsByClassName(&quot;current-progress&quot;);
+      var dynamic = document.getElementsByClassName(&quot;dynamic&quot;);
        
        for(let r=dynamic.length-1;r&gt;-1;r--) {
-        dynamic[r].style.width=current_progress[r].innerHTML + &#34;%&#34;;
-          dynamic[r].setAttribute(&#34;aria-valuenow&#34;,current_progress[r].innerHTML);
-          dynamic[r].innerHTML=current_progress[r].innerHTML+ &#34;% Complete&#34;;
+        dynamic[r].style.width=current_progress[r].innerHTML + &quot;%&quot;;
+          dynamic[r].setAttribute(&quot;aria-valuenow&quot;,current_progress[r].innerHTML);
+          dynamic[r].innerHTML=current_progress[r].innerHTML+ &quot;% Complete&quot;;
        }
       
     }());
@@ -342,7 +342,7 @@
 </figure>
 </p>
 <p>在<strong>assets\scss\partials\layout\artcle.scss</strong>输入</p>
-<pre tabindex="0"><code>
+<pre><code>
       @-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}.progress{height:20px;margin-bottom:20px;overflow:hidden;background-color:#f5f5f5;border-radius:4px;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}
       .progress-bar{float:left;width:0;height:100%;font-size:12px;line-height:20px;color:#fff;text-align:center;background-color:#337ab7;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);-webkit-transition:width .6s ease;-o-transition:width .6s ease;transition:width .6s ease}
       .progress-bar-striped,.progress-striped .progress-bar{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:40px 40px;background-size:40px 40px}
@@ -356,9 +356,9 @@
       .progress-striped .progress-bar-danger{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)}
 </code></pre><p>大致结束，不过由于是markdown写作，引入进度条就要写一大堆html，未免太不优雅，</p>
 <p>于是在<strong>themes\hugo-theme-stack\layouts\shortcodes\bar.html</strong>输入</p>
-<pre tabindex="0"><code>&lt;div class=&#34;progress&#34;&gt;
-    &lt;div class=&#34;dynamic progress-bar progress-bar-success progress-bar-striped active&#34; role=&#34;progressbar&#34; aria-valuenow=&#34;0&#34; aria-valuemin=&#34;0&#34; aria-valuemax=&#34;100&#34; style=&#34;width: 0%&#34;&gt;
-      &lt;span class=&#34;current-progress&#34;&gt;{{index .Params 0}}&lt;/span&gt;
+<pre><code>&lt;div class=&quot;progress&quot;&gt;
+    &lt;div class=&quot;dynamic progress-bar progress-bar-success progress-bar-striped active&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;0&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 0%&quot;&gt;
+      &lt;span class=&quot;current-progress&quot;&gt;{{index .Params 0}}&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 </code></pre><p>直接输入<img src="https://gh.4xu.xyz/d/team/blogimage/software/progressbar/20211009203136.jpg" >会有以下效果</p>

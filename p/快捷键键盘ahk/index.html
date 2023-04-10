@@ -88,7 +88,7 @@
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -105,7 +105,7 @@
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -127,7 +127,7 @@
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -355,19 +355,19 @@
 <p><a class="link" href="https://www.autoahk.com/help/autohotkey/zh-cn/docs/Hotkeys.htm"  target="_blank" rel="noopener"
     >AHK</a>是款强大改键软件，</p>
 <p>1.由于只想将快捷键只在ps与sai中发挥作用，所以可以这么写</p>
-<pre tabindex="0"><code>#If WinActive(&#34;ahk_exe sai2.exe&#34;) || WinActive(&#34;ahk_exe Photoshop.exe&#34;)
+<pre><code>#If WinActive(&quot;ahk_exe sai2.exe&quot;) || WinActive(&quot;ahk_exe Photoshop.exe&quot;)
 
 Numpad4::^s
 
 #If
 </code></pre><p>2.numlock有两种状态，可以强制设置为 &ldquo;AlwaysOn&rdquo; 或 &ldquo;AlwaysOff&rdquo;</p>
 <p>3.在软件经常用到，复制粘贴，所以直接集成一个键</p>
-<pre tabindex="0"><code>NumpadAdd::
+<pre><code>NumpadAdd::
 send ^c
 send ^v
 return
 </code></pre><p>4.手残缘故老是要撤销许多次，所以把shift h改为按一下就会不停ctrl z，再按一下就停止</p>
-<pre tabindex="0"><code>+h::				
+<pre><code>+h::				
 {
 Send,^z
 }

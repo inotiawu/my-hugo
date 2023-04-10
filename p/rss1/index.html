@@ -88,7 +88,7 @@
         
 
         <li >
-            <a href='/%E7%94%9F%E6%B4%BB/'>
+            <a href='/categories/%e7%94%9f%e6%b4%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -105,7 +105,7 @@
         
 
         <li >
-            <a href='/%E8%AE%BE%E8%AE%A1%E7%BB%98%E7%94%BB/'>
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -127,7 +127,7 @@
         
 
         <li >
-            <a href='/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/'>
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -313,33 +313,33 @@
     >rsshub</a>，妙啊，于是开始做点路由。</p>
 <p>简单的做路由有<a class="link" href="http://createfeed.fivefilters.org/"  target="_blank" rel="noopener"
     >createfeed</a>，不过限制偏多，文章数目也只有5，复杂的直接用rsshub做好了，虽然不太懂，但我从来不生产代码，只是代码搬运工，所以有以下代码</p>
-<pre tabindex="0"><code>const got = require(&#39;@/utils/got&#39;);
-const cheerio = require(&#39;cheerio&#39;);
+<pre><code>const got = require('@/utils/got');
+const cheerio = require('cheerio');
 
 module.exports = async (ctx) =&gt; {
     const response = await got({
-        method: &#39;get&#39;,
-        url: &#39;https://bgm.tv/timeline&#39;, //做订阅的链接
+        method: 'get',
+        url: 'https://bgm.tv/timeline', //做订阅的链接
     });
 
     const data = response.data;
 
     const $ = cheerio.load(data);
-    const list = $(&#39;.tml_item&#39;);   //重复的条目
+    const list = $('.tml_item');   //重复的条目
    
 
     ctx.state.data = {
-        title: &#39;时间线&#39;,
-        link: &#39;https://bgm.tv/timeline&#39;,
+        title: '时间线',
+        link: 'https://bgm.tv/timeline',
         item:
             list &amp;&amp;
             list
                 .map((index, item) =&gt; {
                     item = $(item);
-                    if(item.find(&#39;.info&#39;).text().indexOf(&#34;注册&#34;)==-1 &amp;&amp; item.find(&#39;.info&#39;).text().indexOf(&#34;成为了&#34;) ==-1){
-                        description= `${item.find(&#39;.info&#39;).html()}`;
-                        title=item.find(&#39;.info&#39;).text();
-                        link=$(item.find(&#39;.info a&#39;)[2]).attr(&#39;href&#39;);
+                    if(item.find('.info').text().indexOf(&quot;注册&quot;)==-1 &amp;&amp; item.find('.info').text().indexOf(&quot;成为了&quot;) ==-1){
+                        description= `${item.find('.info').html()}`;
+                        title=item.find('.info').text();
+                        link=$(item.find('.info a')[2]).attr('href');
                     }
                     return {
                         title: title,
@@ -368,34 +368,34 @@ module.exports = async (ctx) =&gt; {
     
 </figure>
 </p>
-<pre tabindex="0"><code>const got = require(&#39;@/utils/got&#39;);
-const cheerio = require(&#39;cheerio&#39;);
-const config = require(&#39;@/config&#39;).value;
-const iconv = require(&#39;iconv-lite&#39;);
-const baseurl = &#39;https://m.miaola.info/thread/96&#39;;
+<pre><code>const got = require('@/utils/got');
+const cheerio = require('cheerio');
+const config = require('@/config').value;
+const iconv = require('iconv-lite');
+const baseurl = 'https://m.miaola.info/thread/96';
 
 module.exports = async (ctx) =&gt; {
     const cookie = config.feiyue.cookie;
     const url = baseurl;
     const response = await got.get(url, {
-        responseType: &#39;buffer&#39;,  //防止乱码
+        responseType: 'buffer',  //防止乱码
         
         headers: {
             Cookie: cookie,   //请求cookie
         },
     });
 
-    const data = iconv.decode(response.data, &#39;gb2312&#39;);  //防止乱码
+    const data = iconv.decode(response.data, 'gb2312');  //防止乱码
 
     const $ = cheerio.load(data);
-    const query = $(&#39;.thread-link-item&#39;);
+    const query = $('.thread-link-item');
    
     const list = $(query)
         .slice(0, 10)
         .map((_, item) =&gt; {
             item = $(item);
             return {
-                link: `https://m.miaola.info/${$(item.find(&#39;a&#39;)[0]).attr(&#34;href&#34;)}`,  //条目内链接
+                link: `https://m.miaola.info/${$(item.find('a')[0]).attr(&quot;href&quot;)}`,  //条目内链接
             };
         })
         .get();
@@ -405,19 +405,19 @@ module.exports = async (ctx) =&gt; {
                 async (item) =&gt;
                     await ctx.cache.tryGet(item.link, async () =&gt; {
                         const detailResponse = await got.get(item.link,{
-                            responseType: &#39;buffer&#39;,
+                            responseType: 'buffer',
                             
                             headers: {
                                 Cookie: cookie,
                             },
                         });
-                        const data = iconv.decode(detailResponse.data, &#39;gb2312&#39;);
+                        const data = iconv.decode(detailResponse.data, 'gb2312');
                         const content = cheerio.load(data);
-                          content (&#39;.floor_edit_mark&#39;).remove()
-                          content (&#39;.fieldset&#39;).remove()
-                          content (&#39;.read_fds&#39;).remove()
-                         item.title = content(&#39;.thread-title&#39;).text().slice(0, 10);
-                         item.description = content(&#39;.read-content&#39;).html();
+                          content ('.floor_edit_mark').remove()
+                          content ('.fieldset').remove()
+                          content ('.read_fds').remove()
+                         item.title = content('.thread-title').text().slice(0, 10);
+                         item.description = content('.read-content').html();
                             
     
                         return item;
@@ -426,7 +426,7 @@ module.exports = async (ctx) =&gt; {
     );     
 
     ctx.state.data = {
-        title: &#39;绯月图&#39;,
+        title: '绯月图',
         link: url,
         item: items,
            

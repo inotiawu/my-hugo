@@ -14,10 +14,10 @@
       
       <guid>https://4xu.xyz/p/notionupdate/</guid>
       <description>前几个月花瓣网突然抄袭了pinterest更新网站，一直以为影响不大，直到最近浏览notion的花瓣时，才发现了花瓣网也开启了防盗链，于是寻思着把notion上的图片链接改为自己的图床
-不过notion api一贯不太好用，只好f12查找需要的block 再保存为json文件
+不过notion api一贯不太好用，只好f12查找需要的block    再保存为json文件
 1.先提取block内的图片链接
-代码 import requests import json filepath1 = &amp;quot;k:/office/py/爬虫/花瓣/插画.json&amp;quot; with open(filepath1, &amp;quot;r&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as f: row_data=json.loads(f.readline()) a=0 while a &amp;lt; 200: i=row_data[&amp;quot;result&amp;quot;][&amp;quot;reducerResults&amp;quot;][&amp;quot;collection_group_results&amp;quot;][&amp;quot;blockIds&amp;quot;][a] block=row_data[&#39;recordMap&#39;][&#39;block&#39;][i][&amp;quot;value&amp;quot;][&amp;quot;content&amp;quot;][0] links=row_data[&#39;recordMap&#39;][&#39;block&#39;][block][&amp;quot;value&amp;quot;][&amp;quot;properties&amp;quot;][&amp;quot;title&amp;quot;][0][0] with open(&amp;quot;k:/office/py/爬虫/花瓣/p-block.csv&amp;quot;, &amp;quot;a&amp;quot;,encoding=&amp;quot;utf-8&amp;quot;, newline=&amp;quot;&amp;quot;)as fo: fo.write(block+&amp;quot;,&amp;quot;+links+&amp;quot;,&amp;quot;+i+&amp;quot;\n&amp;quot;) a+=1 提取出来大致是这样 花瓣链接要整理下 但如果图片超过200个，那么只能先提取block，在根据api提取图片链接
-代码 import requests import json import csv import time class photo(): def add_photo(urls): r = requests.request( &amp;quot;GET&amp;quot;, &amp;quot;https://api.notion.com/v1/blocks/&amp;quot;+urls, headers={&amp;quot;Authorization&amp;quot;: &amp;quot;Bearer &amp;quot; + &amp;quot;自己token&amp;quot;, &amp;quot;Notion-Version&amp;quot;: &amp;quot;2022-02-22&amp;quot;}, ) row_data=json.loads(r.text) print(r.text) time.sleep(5) try: i=row_data[&amp;quot;image&amp;quot;][&amp;quot;external&amp;quot;][&amp;quot;url&amp;quot;] b=row_data[&amp;quot;parent&amp;quot;][&amp;quot;page_id&amp;quot;] with open(&amp;quot;k:/office/py/爬虫/花瓣/插画3-block.</description>
+ 代码 import requests import json filepath1 = &amp;quot;k:/office/py/爬虫/花瓣/插画.json&amp;quot; with open(filepath1, &amp;quot;r&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as f: row_data=json.loads(f.readline()) a=0 while a &amp;lt; 200: i=row_data[&amp;quot;result&amp;quot;][&amp;quot;reducerResults&amp;quot;][&amp;quot;collection_group_results&amp;quot;][&amp;quot;blockIds&amp;quot;][a] block=row_data[&#39;recordMap&#39;][&#39;block&#39;][i][&amp;quot;value&amp;quot;][&amp;quot;content&amp;quot;][0] links=row_data[&#39;recordMap&#39;][&#39;block&#39;][block][&amp;quot;value&amp;quot;][&amp;quot;properties&amp;quot;][&amp;quot;title&amp;quot;][0][0] with open(&amp;quot;k:/office/py/爬虫/花瓣/p-block.csv&amp;quot;, &amp;quot;a&amp;quot;,encoding=&amp;quot;utf-8&amp;quot;, newline=&amp;quot;&amp;quot;)as fo: fo.write(block+&amp;quot;,&amp;quot;+links+&amp;quot;,&amp;quot;+i+&amp;quot;\n&amp;quot;) a+=1   提取出来大致是这样   花瓣链接要整理下   但如果图片超过200个，那么只能先提取block，在根据api提取图片链接
+ 代码 import requests import json import csv import time class photo(): def add_photo(urls): r = requests.request( &amp;quot;GET&amp;quot;, &amp;quot;https://api.notion.com/v1/blocks/&amp;quot;+urls, headers={&amp;quot;Authorization&amp;quot;: &amp;quot;Bearer &amp;quot; + &amp;quot;自己token&amp;quot;, &amp;quot;Notion-Version&amp;quot;: &amp;quot;2022-02-22&amp;quot;}, ) row_data=json.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <guid>https://4xu.xyz/p/pandavan/</guid>
       <description>去年买了个红米ac2100路由器，用到现在虽然偶尔会断流，影响不大，就没搭理它，不过最近时不时会降网速，300m变为100m，这就不能忍了，决定刷固件
 依据这篇教程2022最新红米AC2100路由器刷Pandavan教程,只要CTRL c v键没坏就能成功
-然而网速100m问题依旧，查看pandavan后台以太网链路状态只有100m，眉头一皱，发觉事情并不简单，后来发现是网线的另一端松动 解决网线后，由于算是三级路由，只能接ap模式，才会有ipv6 但接完ap模式要管理后台，这就要到接光纤的路由里面查找ip，一般显示为？号 看看有什么变化，灯变成一盏了 网速比之前慢了点 之前 现在 </description>
+然而网速100m问题依旧，查看pandavan后台以太网链路状态只有100m，眉头一皱，发觉事情并不简单，后来发现是网线的另一端松动 解决网线后，由于算是三级路由，只能接ap模式，才会有ipv6  但接完ap模式要管理后台，这就要到接光纤的路由里面查找ip，一般显示为？号  看看有什么变化，灯变成一盏了  网速比之前慢了点   之前     现在   </description>
     </item>
     
     <item>
@@ -39,12 +39,12 @@
       <guid>https://4xu.xyz/p/mt3/</guid>
       <description>以前有摸过几个月吉他，现在虽没吉他可弹，但还是喜欢把一些大都是galgamebgm转为吉他谱，不过在扒谱过程中，人菜瘾大的我即使勉强听出音阶，对曲子里的大小调，和弦，复调可所谓是毫无办法。后来发现如果有六线谱，那再转换为吉他谱会便利很多，思考着如果有扒谱软件岂不是更妙，仰仗着ai训练的风靡，逛黄油论坛时找到了mt3模型可用于扒谱
 huggingface里面原来调用mt3模型出现了bug，于是稍微改了下，自己部署了一份
-部署与稍微改了下 首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对 把原来代码复制后，看了下原来的错误日志，有这么一行
+部署与稍微改了下    首先打开huggingface官网，创建new space 这时sdk不知选谁好，不过首先排除static，因为调用文件是python格式，后来选2侥幸蒙对  把原来代码复制后，看了下原来的错误日志，有这么一行
 WARNING: You are using pip version 22.0.2; however, version 22.0.4 is available. 那我直接在app.py ctrl+v
-os.system(&amp;#34;python3 -m pip install --upgrade pip&amp;#34;) 错误的地方还有
-File &amp;#34;app.py&amp;#34;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &amp;#39;t5x.partitioning&amp;#39; has no attribute &amp;#39;ModelBasedPjitPartitioner&amp;#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
-self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions， 发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
-self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 食用过程 首先打开这个网址，将音乐格式转为wav 接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载 至于打谱软件直接用win10商店中的musescore 3 虽说谱不能百分百准确，但对我来说相对够用</description>
+os.system(&amp;quot;python3 -m pip install --upgrade pip&amp;quot;) 错误的地方还有
+ File &amp;quot;app.py&amp;quot;, line 88, in __init__ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( AttributeError: module &#39;t5x.partitioning&#39; has no attribute &#39;ModelBasedPjitPartitioner&#39; 度娘回来后，一脸懵逼，于是从原来入手，先是找到app.py 那一行
+ self.partitioner = t5x.partitioning.ModelBasedPjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1) 直接到githubmt3搜索参数，num_partitions，  发觉虽然没有ModelBasedPjitPartitioner，但有PjitPartitioner，名字改完后，顺利部署
+ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 1, 1, 1), num_partitions=1)  食用过程 首先打开这个网址，将音乐格式转为wav  接着打开mt3，将音乐甩上去，大概等上两分钟左右大概率会卡，就会出现乐谱下载  至于打谱软件直接用win10商店中的musescore 3  虽说谱不能百分百准确，但对我来说相对够用</description>
     </item>
     
     <item>
@@ -53,9 +53,9 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
       <pubDate>Sun, 30 Jan 2022 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/p/waline%E8%AF%84%E8%AE%BA%E9%80%9A%E7%9F%A5%E4%B8%8E%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
-      <description>域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问 陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功 waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
+      <description>域名邮箱 在评论时看到别人的邮箱自带域名，好奇搜索后知道了企业邮箱这一回事，迅速注册后老是卡在mx验证这一步，韩宗视力最初没有发现，想修改dns必须先把nameserver变为默认，可是这里面有个问题，由于博客在vercel上，nameserver已经解析成vercel，修改怕影响访问  陷入僵局的我查看时vercle的domain设置时，原来直接可以添加mx解析，闹了半天做了无用功  waline评论通知 waline部署在vercel上，唯一麻烦的是环境变量要一行行写，后来用126邮箱写完发觉没生效，以为是邮箱问题就没继续测试。
 直到有了域名邮箱后，再配置评论通知依然没反应，眉头一皱，发觉事情并不简单，在环境变量处填了几个排列组合后，其静如渊沉
-摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下 vercel日志 可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。</description>
+摸索下vercel原来有日志，查看日志后，不管有没有填环境变量，显示的错误都是一致，这才恍然大悟，配置环境变量后再重新部署了下   vercel日志     可是当初我用126邮箱就有重新部署，可是依旧没生效，思来想去后126和163邮箱配置需要的不是登录密码，而是smtp密码，用登录密码是有重新部署，而等到用smtp密码，却忘了再部署，自然都没有生效。</description>
     </item>
     
     <item>
@@ -64,13 +64,13 @@ self.partitioner = t5x.partitioning.PjitPartitioner( model_parallel_submesh=(1, 
       <pubDate>Wed, 26 Jan 2022 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/p/notion/</guid>
-      <description>两年前，为了便于浏览各个网站的收藏文章，于是把它们都整合到pinbox这个软件上，然而整合完自己都忘了。直到最近又有收藏文章的需求，打开它一瞧，除了多了个收费外基本没什么变化，后来发现用邀请码可以创建多级收藏夹，心安理得的继续白嫖，没过多久，估计白嫖多级收藏夹的事被知道了，明明没有达到收藏上限，却再也无法创建新收藏了，虽然一年会员费也不贵，但pinbox略带简陋的界面以及两年来几乎没变化的功能，请容许我拒绝 pinbox界面 开始了寻找替代pinbox软件，起初想自部署笔记软件，但功能太少了，自己又没有服务器，想想还是算了，后来找到了notion，虽然是笔记软件，但完美的契合了要求，notion介绍功能网上很多，懒得说了，感觉这款软件最大的亮点在于白嫖模块化 pinbox笑我贫穷，我笑它不懂死宅 notion api 事情到这里，一般就结束了，无非是换了个软件罢了，但某天躺平在床上刷着豆瓣，偶然发现了notion原来有api的，垂死病中惊坐起，在用过notion功能后，一直想把花瓣网的图片和网易云的歌单导入进去，在看到有api后，开启了折腾之旅
+      <description>两年前，为了便于浏览各个网站的收藏文章，于是把它们都整合到pinbox这个软件上，然而整合完自己都忘了。直到最近又有收藏文章的需求，打开它一瞧，除了多了个收费外基本没什么变化，后来发现用邀请码可以创建多级收藏夹，心安理得的继续白嫖，没过多久，估计白嫖多级收藏夹的事被知道了，明明没有达到收藏上限，却再也无法创建新收藏了，虽然一年会员费也不贵，但pinbox略带简陋的界面以及两年来几乎没变化的功能，请容许我拒绝   pinbox界面   开始了寻找替代pinbox软件，起初想自部署笔记软件，但功能太少了，自己又没有服务器，想想还是算了，后来找到了notion，虽然是笔记软件，但完美的契合了要求，notion介绍功能网上很多，懒得说了，感觉这款软件最大的亮点在于白嫖模块化   pinbox笑我贫穷，我笑它不懂死宅    notion api 事情到这里，一般就结束了，无非是换了个软件罢了，但某天躺平在床上刷着豆瓣，偶然发现了notion原来有api的，垂死病中惊坐起，在用过notion功能后，一直想把花瓣网的图片和网易云的歌单导入进去，在看到有api后，开启了折腾之旅
 notion api可以结合python使用，python以前从没写过，后来看了下有点像node.js爬虫，仰仗贫瘠的js知识与捉急的智商，抄袭借鉴Notion → 支付宝&amp;amp;微信 → 账单里的代码，头发少了几根后，恼恨愉悦开启爬虫之旅
 然而一开始就有问题了，写代码常有的事，输入pip install requests解决
-接着又发现notion api怪得很，用图片链接一定要求有后缀，而花瓣网图片恰恰是链接显示的，还能不能愉快地玩耍 后来思考notion支持导入markdown文件，那先把图片链接保存为md文件，在导入到notion中，再根据api更新里面链接，测试可行后，就先开始爬虫花瓣网
-花瓣网 花瓣网虽然有tag功能，但却没有排除关键字搜索，这样找起图片来诸多不易， 花瓣谜一般的搜索功能 notion的筛选 1.图片链接与信息汇总
+ 接着又发现notion api怪得很，用图片链接一定要求有后缀，而花瓣网图片恰恰是链接显示的，还能不能愉快地玩耍  后来思考notion支持导入markdown文件，那先把图片链接保存为md文件，在导入到notion中，再根据api更新里面链接，测试可行后，就先开始爬虫花瓣网
+花瓣网 花瓣网虽然有tag功能，但却没有排除关键字搜索，这样找起图片来诸多不易，   花瓣谜一般的搜索功能     notion的筛选   1.图片链接与信息汇总
 简单来说就是为每一个图片链接保存为md文件，再把图片中的tag，花瓣链接，源地址保存到汇总.csv中
-代码 import os import requests import re headers={ &amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&amp;#39;, &amp;#39;X-Request&amp;#39;: &amp;#39;JSON&amp;#39;, &amp;#34;cookie&amp;#34;:&amp;#34;cookie&amp;#34; } req = requests.get(url = &amp;#34;画板链接&amp;#34;,headers=headers) htmlPage = req.content for p in range(1,25): prog = re.compile(r&amp;#39;&amp;#34;pins&amp;#34;.*&amp;#39;) appPins = prog.findall(htmlPage.decode(&amp;#34;utf-8&amp;#34;)) null = None true = True result = eval(appPins[0][7:-2]) images = [] for i in result: info = &amp;#34;!</description>
+ 代码 import os import requests import re headers={ &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#39;, &#39;X-Request&#39;: &#39;JSON&#39;, &amp;quot;cookie&amp;quot;:&amp;quot;cookie&amp;quot; } req = requests.</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@ notion api可以结合python使用，python以前从没写过，后来看了下�
       
       <guid>https://4xu.xyz/p/magpie/</guid>
       <description>虽然是逐渐4k的年代，但galgame业界依然保持720p的优良传统，更不用说远古时代的800*600，玩是能玩，但看起来像近视似的。直到最近发现了magpie这款可以将游戏分辨率放大软件，起初不以为意，还以为是通过插值算法放大的，即使能放大，边缘估计像图片ai放大那样模糊；即使够清晰，消耗资源一定很多，后来试用了下，效果拔群，不仅够清晰，占用也很低。
-以下几张效果图 使用前 ~ 使用后 ~ 使用前 ~ 使用后 ~ 使用前 ~ 使用后 ~ 软件打开的样子 当然啦，眼睛如果不是太列文虎克的话，可能看不出有什么区别，具体内容可以去github一观</description>
+以下几张效果图   使用前   ~   使用后   ~   使用前   ~   使用后   ~   使用前   ~   使用后   ~   软件打开的样子   当然啦，眼睛如果不是太列文虎克的话，可能看不出有什么区别，具体内容可以去github一观</description>
     </item>
     
     <item>
@@ -93,14 +93,14 @@ notion api可以结合python使用，python以前从没写过，后来看了下�
 由于我是个左撇子，所以只能用右手控制快捷键，但键盘摆在下方，数位板则在桌面上，两只手时常会陷入到左右互博，这是个相当别扭的姿势，而且右手按那些快捷键也不怎么轻松愉快，凭啥快捷键用左手！为啥不用右手！右手没手权吗！气抖冷，右手何时站起来
 于是乎我将目光投向市面上可编辑宏的机械键盘，不过都不太满意，一来桌面位置不够，剩余空间之余十几厘米，而哪怕是61键盘都要28cm了，二来机械键盘厚度2~4cm，长时间使用太累手，三 键盘布局是“QWERTY”式，对右手来说不好形成肌肉记忆
 后来我转念一想，只要有ahk与改键工具，你的下一块键盘有何必是键盘呢，豁然开朗的我开始摸索现有不同输入设备
-那些年用过的输入设备 蓝牙小键盘 这是上一块平板的馈赠，优点是体积小，有蓝牙，缺点键太密集，一点都不好按，电量维持不了多久，而且不改键不好用，改了键又会影响原来的键盘布局，所以就pass掉
-xbox手柄与xpadder 手柄是买来推galgamesteam的，肩键与十字键按起来很有质感，按键众多，但放在桌子使用与握住它使用是两回事，厚度导致手无论是侧握还是趴着使用，都不是太舒服，pass掉
-数字键盘与ahk 寻找之下数字键盘十分契合我的需求，无论怎么改键都不会影响到左边的字母键盘，虽然按键有点少，但配合数位板的按键，勉强够用
+那些年用过的输入设备 蓝牙小键盘   这是上一块平板的馈赠，优点是体积小，有蓝牙，缺点键太密集，一点都不好按，电量维持不了多久，而且不改键不好用，改了键又会影响原来的键盘布局，所以就pass掉
+xbox手柄与xpadder   手柄是买来推galgamesteam的，肩键与十字键按起来很有质感，按键众多，但放在桌子使用与握住它使用是两回事，厚度导致手无论是侧握还是趴着使用，都不是太舒服，pass掉
+数字键盘与ahk   寻找之下数字键盘十分契合我的需求，无论怎么改键都不会影响到左边的字母键盘，虽然按键有点少，但配合数位板的按键，勉强够用
 数字键盘2.0 在用过一段时间后，绘画进入上色阶段后，由于需要调色与调整图层，键数目变得不怎么够用，加上数位板按键实在是太硬，每次按的时候都带有谜之音效，于是另购一块34键的数字键盘，虽然需要50多块rmb，不过胜在布局合理
-如无意外这应该是终极方案了，不过最近对旋钮有点兴趣，至于其他输入设备像tourbox,ergodox等，没用过不做评价,但感觉缺乏性价比
+ 如无意外这应该是终极方案了，不过最近对旋钮有点兴趣，至于其他输入设备像tourbox,ergodox等，没用过不做评价,但感觉缺乏性价比
 AHK AHK是款强大改键软件，
 1.由于只想将快捷键只在ps与sai中发挥作用，所以可以这么写
-#If WinActive(&amp;#34;ahk_exe sai2.exe&amp;#34;) || WinActive(&amp;#34;ahk_exe Photoshop.exe&amp;#34;) Numpad4::^s #If 2.numlock有两种状态，可以强制设置为 &amp;ldquo;AlwaysOn&amp;rdquo; 或 &amp;ldquo;AlwaysOff&amp;rdquo;
+#If WinActive(&amp;quot;ahk_exe sai2.exe&amp;quot;) || WinActive(&amp;quot;ahk_exe Photoshop.exe&amp;quot;) Numpad4::^s #If 2.numlock有两种状态，可以强制设置为 &amp;ldquo;AlwaysOn&amp;rdquo; 或 &amp;ldquo;AlwaysOff&amp;rdquo;
 3.在软件经常用到，复制粘贴，所以直接集成一个键
 NumpadAdd:: send ^c send ^v return 4.手残缘故老是要撤销许多次，所以把shift h改为按一下就会不停ctrl z，再按一下就停止
 +h::	{ Send,^z } { v_Enable:=!v_Enable If (v_Enable=0) { SetTimer, Label0, Off } Else { SetTimer, Label0, 250 } } Return Label0: { Send,^z } return </description>
@@ -114,7 +114,7 @@ NumpadAdd:: send ^c send ^v return 4.手残缘故老是要撤销许多次，所�
       <guid>https://4xu.xyz/p/hardpan/</guid>
       <description>家里的台式电脑用了七、八年还是机械硬盘，之所以没有换固态，是要经过三个这样的步骤，1.首先要拆机，换硬盘，这当然没有什么难度，几个螺丝与几根线的事情。2.重装系统，这也没什么，一个u盘就能搞定。3.安装各种软件与恢复配置，这&amp;hellip;.就相当繁琐，一想起ps与sai中笔刷，动作，快捷键设置和git各种配置，林林总总各种软件，想起来就,有鉴于此，每次被机械硬盘搞得抓狂，欲购固态时，想起上面三个步骤，突然就泄了。
 一直等到在少数派看到这样一篇文章一日一技 | 集中管理与备份 Windows 分散各处的应用配置文件，一直犹豫的问题迎刃而解，于是开始购买固态，好巧不巧的是这是固态价格位居高位，想买的mx500死活不降价，在看到天猫有299的tc10，就它了，下单。
-打开快递，送了个u盘与sata线 拆开电脑，发觉显卡堵住sata接口，要重新接线就要拆开显卡，摸鱼性格发作，就把光驱替换成硬盘好了，反正光驱从买回来就没用到过 喜闻乐见的安装系统，可以借鉴文章如何安装Windows操作系统 安装软件，软件配置 py脚本 总体大致结束。</description>
+打开快递，送了个u盘与sata线  拆开电脑，发觉显卡堵住sata接口，要重新接线就要拆开显卡，摸鱼性格发作，就把光驱替换成硬盘好了，反正光驱从买回来就没用到过  喜闻乐见的安装系统，可以借鉴文章如何安装Windows操作系统   安装软件，软件配置  py脚本  总体大致结束。</description>
     </item>
     
     <item>
@@ -124,10 +124,10 @@ NumpadAdd:: send ^c send ^v return 4.手残缘故老是要撤销许多次，所�
       
       <guid>https://4xu.xyz/p/rss1/</guid>
       <description>为了减少我的摸鱼，开始思考下时间一般用在哪里，浏览网页应该占了大部分，那
-打开各种网页时间==摸鱼时间
-减少打开网页时间，估计你也想到了，就是rss嘛，不止作为信息聚合，还可以抑制我想打开网页的焦虑，在大学就曾听过了rss，不过缺少可定制rss源，最近发觉有rsshub，妙啊，于是开始做点路由。
+ 打开各种网页时间==摸鱼时间
+ 减少打开网页时间，估计你也想到了，就是rss嘛，不止作为信息聚合，还可以抑制我想打开网页的焦虑，在大学就曾听过了rss，不过缺少可定制rss源，最近发觉有rsshub，妙啊，于是开始做点路由。
 简单的做路由有createfeed，不过限制偏多，文章数目也只有5，复杂的直接用rsshub做好了，虽然不太懂，但我从来不生产代码，只是代码搬运工，所以有以下代码
-const got = require(&amp;#39;@/utils/got&amp;#39;); const cheerio = require(&amp;#39;cheerio&amp;#39;); module.exports = async (ctx) =&amp;gt; { const response = await got({ method: &amp;#39;get&amp;#39;, url: &amp;#39;https://bgm.tv/timeline&amp;#39;, //做订阅的链接 }); const data = response.data; const $ = cheerio.load(data); const list = $(&amp;#39;.tml_item&amp;#39;); //重复的条目 ctx.state.data = { title: &amp;#39;时间线&amp;#39;, link: &amp;#39;https://bgm.tv/timeline&amp;#39;, item: list &amp;amp;&amp;amp; list .map((index, item) =&amp;gt; { item = $(item); if(item.find(&amp;#39;.info&amp;#39;).text().indexOf(&amp;#34;注册&amp;#34;)==-1 &amp;amp;&amp;amp; item.find(&amp;#39;.info&amp;#39;).text().indexOf(&amp;#34;成为了&amp;#34;) ==-1){ description= `${item.find(&amp;#39;.info&amp;#39;).html()}`; title=item.find(&amp;#39;.info&amp;#39;).text(); link=$(item.find(&amp;#39;.info a&amp;#39;)[2]).attr(&amp;#39;href&amp;#39;); } return { title: title, description: description, link: link }; }) .</description>
+const got = require(&#39;@/utils/got&#39;); const cheerio = require(&#39;cheerio&#39;); module.exports = async (ctx) =&amp;gt; { const response = await got({ method: &#39;get&#39;, url: &#39;https://bgm.tv/timeline&#39;, //做订阅的链接 }); const data = response.data; const $ = cheerio.load(data); const list = $(&#39;.tml_item&#39;); //重复的条目 ctx.state.data = { title: &#39;时间线&#39;, link: &#39;https://bgm.tv/timeline&#39;, item: list &amp;amp;&amp;amp; list .map((index, item) =&amp;gt; { item = $(item); if(item.find(&#39;.info&#39;).text().indexOf(&amp;quot;注册&amp;quot;)==-1 &amp;amp;&amp;amp; item.find(&#39;.info&#39;).text().indexOf(&amp;quot;成为了&amp;quot;) ==-1){ description= `${item.find(&#39;.info&#39;).html()}`; title=item.find(&#39;.info&#39;).text(); link=$(item.find(&#39;.info a&#39;)[2]).</description>
     </item>
     
     <item>
@@ -139,13 +139,13 @@ const got = require(&amp;#39;@/utils/got&amp;#39;); const cheerio = require(&amp
       <description>去年觉醒了看书的兴趣后，在今年4.23决定买些实体书存货，不料活动力度实在不足，去年四月初猴当就有三折了，今年直到18号晚才有一次，然而被购物车价格临时变动阴到了，可耻的没有抢到。
 虽然猴当有2.5折的卷，然而做法相当618，双11式， 抢券需要一定量赏金，赏金获得需要逛商城，签到，非常繁琐，不想做。
 狗东篇
-听说狗东也有活动了，去看看有什么券，发现300-50 奇怪的券 第一反应感觉奇怪，去年三三折券一般为600-100，配合100-50活动，可以做到三三折。不过300-50也可以做到三三折，想着没差多少，不错了，没想到的是这里面有个坑等着我。
+听说狗东也有活动了，去看看有什么券，发现300-50   奇怪的券   第一反应感觉奇怪，去年三三折券一般为600-100，配合100-50活动，可以做到三三折。不过300-50也可以做到三三折，想着没差多少，不错了，没想到的是这里面有个坑等着我。
 接着又是极度不友好的零点抢券，心中一晒，尔等怎么抢得过单身多年的手速。零点后，可耻的又没有抢到，这不科学，这一定是脚本，要用魔法打败魔法，虽然我不懂js，但我懂点ahk，于是码了下字
 ；简单的脚本 $F3:: SetTimer, Closeclick, 100 return $F4:: Pause Closeclick: Click 617,1041 sleep 20 Click 473,654 想着是这下稳了，然而第二天中午依然没抢到券，（⊙ｏ⊙）！！！！ 你们的手速是单身了多少年，100ms的脚本都抢不过。不急，100ms不行，3ms总行了吧
-；3ms的脚本 $F3:: SetTimer, Closeclick, 3 return $F4:: Pause Closeclick: Click 617,1041 sleep 1 Click 473,654 晚上，总算抢到了，在狗东挑了几本后，发觉不对劲，以往就只有100-50的活动，现在多了个五折的活动，而且书大多参与的是五折的活动，如果你用抢到券买五折的书，别说三三折了，都快4.5折了。嗯，狗东这操作可以呀，说不定就是想让抢到券自动放弃，虽然狗东你在大气层，但我在电离层，只要我想凑，就可以做到三三折 书也很快到了，一本没塑封差评
-猴当篇
+；3ms的脚本 $F3:: SetTimer, Closeclick, 3 return $F4:: Pause Closeclick: Click 617,1041 sleep 1 Click 473,654 晚上，总算抢到了，在狗东挑了几本后，发觉不对劲，以往就只有100-50的活动，现在多了个五折的活动，而且书大多参与的是五折的活动，如果你用抢到券买五折的书，别说三三折了，都快4.5折了。嗯，狗东这操作可以呀，说不定就是想让抢到券自动放弃，虽然狗东你在大气层，但我在电离层，只要我想凑，就可以做到三三折  书也很快到了，一本没塑封差评
+ 猴当篇
 23号，听说猴当有3-1优惠码，继续码脚本
-；只会用if 的渣渣 SetTimer, monkeydang, 40 return $F4:: Pause return monkeydang: PixelGetColor, color, 266,620 if (color != &amp;#34;0xFFFFFF&amp;#34;){ Click 213,620,2 sleep 10 send ^c sleep 10 clipboard=%clipboard% if (clipboard = &amp;#34;优惠&amp;#34;){ click 172,616 click 201,620 clipboard=&amp;#34;&amp;#34; }else{ Click 881,881 Pause } }else{ PixelGetColor, nextcolor, 104,598 if(nextcolor = &amp;#34;0x3c46FF&amp;#34;){ Click 898,946 Pause }else{ PixelGetColor, color, 266,620 } } 晚上零点用，发觉图书不适用，这才发现了套路很深很深 假如出现其他活动基本上就用不了 删删改改，总算弄完了，偶然用脚本抢到码，又发现有图书不适用，而且特别鸡贼的是，猴当不告诉你那本不适用，只能自己找不同 后浏览图书才发现下面两张图</description>
+；只会用if 的渣渣 SetTimer, monkeydang, 40 return $F4:: Pause return monkeydang: PixelGetColor, color, 266,620 if (color != &amp;quot;0xFFFFFF&amp;quot;){ Click 213,620,2 sleep 10 send ^c sleep 10 clipboard=%clipboard% if (clipboard = &amp;quot;优惠&amp;quot;){ click 172,616 click 201,620 clipboard=&amp;quot;&amp;quot; }else{ Click 881,881 Pause } }else{ PixelGetColor, nextcolor, 104,598 if(nextcolor = &amp;quot;0x3c46FF&amp;quot;){ Click 898,946 Pause }else{ PixelGetColor, color, 266,620 } } 晚上零点用，发觉图书不适用，这才发现了套路很深很深   假如出现其他活动基本上就用不了   删删改改，总算弄完了，偶然用脚本抢到码，又发现有图书不适用，而且特别鸡贼的是，猴当不告诉你那本不适用，只能自己找不同 后浏览图书才发现下面两张图</description>
     </item>
     
   </channel>
