@@ -3,32 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://4xu.xyz/categories/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/galgame/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/post/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E5%89%A7%E6%83%85/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E5%9E%8B%E6%9C%88%E7%A4%BE/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/categories/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E8%98%91%E8%A8%80%E8%8F%8C%E8%AF%AD/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/p/fatenight/</loc>
+    <lastmod>2023-07-02T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://4xu.xyz/p/20230618/</loc>
     <lastmod>2023-06-23T11:04:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://4xu.xyz/categories/</loc>
-    <lastmod>2023-06-23T11:04:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/post/</loc>
-    <lastmod>2023-06-23T11:04:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/</loc>
-    <lastmod>2023-06-23T11:04:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://4xu.xyz/tags/%E4%B9%B0%E4%B9%B0%E4%B9%B0/</loc>
-    <lastmod>2023-06-23T11:04:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/</loc>
     <lastmod>2023-06-23T11:04:44+08:00</lastmod>
   </url>
   
@@ -53,22 +83,7 @@
   </url>
   
   <url>
-    <loc>https://4xu.xyz/tags/galgame/</loc>
-    <lastmod>2023-06-04T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://4xu.xyz/p/ever17/</loc>
-    <lastmod>2023-06-04T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/%E5%89%A7%E6%83%85/</loc>
-    <lastmod>2023-06-04T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/categories/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2023-06-04T01:19:48+08:00</lastmod>
   </url>
   
