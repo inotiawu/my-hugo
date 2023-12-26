@@ -3,8 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://4xu.xyz/p/hackgu/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://4xu.xyz/categories/</loc>
-    <lastmod>2023-12-15T01:19:48+08:00</lastmod>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/jrpg/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/post/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E5%8A%A8%E4%BD%9C/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/categories/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4xu.xyz/tags/%E7%BD%91%E6%B8%B8/</loc>
+    <lastmod>2023-12-24T01:19:48+08:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +63,7 @@
   </url>
   
   <url>
-    <loc>https://4xu.xyz/post/</loc>
-    <lastmod>2023-12-15T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://4xu.xyz/tags/slg/</loc>
-    <lastmod>2023-12-15T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/</loc>
     <lastmod>2023-12-15T01:19:48+08:00</lastmod>
   </url>
   
@@ -43,17 +83,7 @@
   </url>
   
   <url>
-    <loc>https://4xu.xyz/</loc>
-    <lastmod>2023-12-15T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://4xu.xyz/tags/%E6%88%98%E6%A3%8B/</loc>
-    <lastmod>2023-12-15T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/categories/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2023-12-15T01:19:48+08:00</lastmod>
   </url>
   
@@ -168,11 +198,6 @@
   </url>
   
   <url>
-    <loc>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</loc>
-    <lastmod>2023-10-21T20:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://4xu.xyz/tags/%E5%A5%B8%E5%95%86/</loc>
     <lastmod>2023-10-21T20:19:48+08:00</lastmod>
   </url>
@@ -199,11 +224,6 @@
   
   <url>
     <loc>https://4xu.xyz/tags/steam/</loc>
-    <lastmod>2023-10-13T20:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/%E5%8A%A8%E4%BD%9C/</loc>
     <lastmod>2023-10-13T20:19:48+08:00</lastmod>
   </url>
   
@@ -470,16 +490,6 @@
   <url>
     <loc>https://4xu.xyz/tags/%E6%B8%A9%E5%BA%A6/</loc>
     <lastmod>2023-05-06T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/jrpg/</loc>
-    <lastmod>2023-04-25T01:19:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4xu.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/</loc>
-    <lastmod>2023-04-25T01:19:48+08:00</lastmod>
   </url>
   
   <url>
