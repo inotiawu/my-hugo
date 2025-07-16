@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>音箱 on 四序、片羽与摸鱼力学</title>
+    <link>https://4xu.xyz/tags/%E9%9F%B3%E7%AE%B1/</link>
+    <description>Recent content in 音箱 on 四序、片羽与摸鱼力学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jun 2025 07:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/%E9%9F%B3%E7%AE%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>维修二则</title>
+      <link>https://4xu.xyz/p/repair202506/</link>
+      <pubDate>Thu, 05 Jun 2025 07:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/p/repair202506/</guid>
+      <description>去年夏冬之交，估计插座开关问题，冲击电流太大接连报废音箱与风扇。不过快要到冬天，便懒得修理，直到最近天气变热，搜索b站教程开修
+艾美特风扇 风扇既无法正常启动，也没电机嗡嗡声，多半是保险丝废了。所以取出吹灰已久的万用表，扭到蜂鸣档测量，若是保险丝坏了，灯就不亮  直接拔开插销，拧出风机后壳螺丝。有的插销里面固定螺丝，这台风扇倒是没有。   废了好大劲，剥开黄线里面保险丝测量，却发觉没坏。风扇嘛，要么保险丝出现问题，要么启动电容故障。兴冲冲一测，果然看到读数为零，立即淘宝走起   左边为启动电容   两个新电容来到后测试，同样没读数。心知不对劲，打开万用表说明书电容一行，嗯，当初买它太便宜，果然便宜没好货，这货电笔无法测量电容。好在可用电阻档测量电容，看到读数上扬，总算松了一口气   咦，那之前测量风扇内启动电容岂不是……？怀揣这个想法，用电阻档再次测量，不出所料同样闪烁读数。启动电容与保险丝都没坏，那问题究竟出在哪？不死心尝试插上电源启动，竟神奇能启动，虽然二档风变一档，不过不管了，能用就行。今年第一次维修糊里糊涂结束，评价为很迷
+惠威音箱 掐指一算，这台音箱足足服役了十一年之久，历久弥新。拆开很方便，螺丝都在背面，需要注意螺丝为八角   电路板如下图，里面的线由于连接至喇叭，忒麻烦。而右上角装置旋开后，可以取出保险管   蜂鸣档测量，果真坏了，继续淘宝保险管替换，成功点亮  </description>
+    </item>
+    
+  </channel>
+</rss>
