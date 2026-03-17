@@ -6,22 +6,103 @@
     <description>Recent content in Tags on 四序、片羽与摸鱼力学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Feb 2026 01:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2026 08:19:48 +0800</lastBuildDate><atom:link href="https://4xu.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>galgame</title>
-      <link>https://4xu.xyz/tags/galgame/</link>
-      <pubDate>Thu, 12 Feb 2026 01:19:48 +0800</pubDate>
+      <title>epic</title>
+      <link>https://4xu.xyz/tags/epic/</link>
+      <pubDate>Tue, 17 Mar 2026 08:19:48 +0800</pubDate>
       
-      <guid>https://4xu.xyz/tags/galgame/</guid>
+      <guid>https://4xu.xyz/tags/epic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>单机</title>
+      <link>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</link>
+      <pubDate>Tue, 17 Mar 2026 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>打牌</title>
+      <link>https://4xu.xyz/tags/%E6%89%93%E7%89%8C/</link>
+      <pubDate>Tue, 17 Mar 2026 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E6%89%93%E7%89%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>赌</title>
+      <link>https://4xu.xyz/tags/%E8%B5%8C/</link>
+      <pubDate>Tue, 17 Mar 2026 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E8%B5%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>骰子</title>
+      <link>https://4xu.xyz/tags/%E9%AA%B0%E5%AD%90/</link>
+      <pubDate>Tue, 17 Mar 2026 08:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E9%AA%B0%E5%AD%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jrpg</title>
+      <link>https://4xu.xyz/tags/jrpg/</link>
+      <pubDate>Fri, 13 Mar 2026 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/jrpg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>剧情</title>
       <link>https://4xu.xyz/tags/%E5%89%A7%E6%83%85/</link>
-      <pubDate>Thu, 12 Feb 2026 01:19:48 +0800</pubDate>
+      <pubDate>Fri, 13 Mar 2026 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/tags/%E5%89%A7%E6%83%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>回合制</title>
+      <link>https://4xu.xyz/tags/%E5%9B%9E%E5%90%88%E5%88%B6/</link>
+      <pubDate>Fri, 13 Mar 2026 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E5%9B%9E%E5%90%88%E5%88%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>悲</title>
+      <link>https://4xu.xyz/tags/%E6%82%B2/</link>
+      <pubDate>Fri, 13 Mar 2026 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E6%82%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>迷宫</title>
+      <link>https://4xu.xyz/tags/%E8%BF%B7%E5%AE%AB/</link>
+      <pubDate>Fri, 13 Mar 2026 20:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/%E8%BF%B7%E5%AE%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>galgame</title>
+      <link>https://4xu.xyz/tags/galgame/</link>
+      <pubDate>Thu, 12 Feb 2026 01:19:48 +0800</pubDate>
+      
+      <guid>https://4xu.xyz/tags/galgame/</guid>
       <description></description>
     </item>
     
@@ -130,15 +211,6 @@
       <pubDate>Thu, 04 Dec 2025 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/tags/%E5%8A%A8%E4%BD%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>单机</title>
-      <link>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</link>
-      <pubDate>Thu, 04 Dec 2025 20:19:48 +0800</pubDate>
-      
-      <guid>https://4xu.xyz/tags/%E5%8D%95%E6%9C%BA/</guid>
       <description></description>
     </item>
     
@@ -319,15 +391,6 @@
       <pubDate>Tue, 04 Nov 2025 01:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/tags/%E8%83%8C%E5%BE%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>epic</title>
-      <link>https://4xu.xyz/tags/epic/</link>
-      <pubDate>Sat, 18 Oct 2025 20:19:48 +0800</pubDate>
-      
-      <guid>https://4xu.xyz/tags/epic/</guid>
       <description></description>
     </item>
     
@@ -607,15 +670,6 @@
       <pubDate>Thu, 15 May 2025 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/tags/rpg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>回合制</title>
-      <link>https://4xu.xyz/tags/%E5%9B%9E%E5%90%88%E5%88%B6/</link>
-      <pubDate>Thu, 15 May 2025 20:19:48 +0800</pubDate>
-      
-      <guid>https://4xu.xyz/tags/%E5%9B%9E%E5%90%88%E5%88%B6/</guid>
       <description></description>
     </item>
     
@@ -1169,15 +1223,6 @@
     </item>
     
     <item>
-      <title>jrpg</title>
-      <link>https://4xu.xyz/tags/jrpg/</link>
-      <pubDate>Sun, 24 Dec 2023 01:19:48 +0800</pubDate>
-      
-      <guid>https://4xu.xyz/tags/jrpg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>二次元</title>
       <link>https://4xu.xyz/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/</link>
       <pubDate>Sun, 24 Dec 2023 01:19:48 +0800</pubDate>
@@ -1390,15 +1435,6 @@
       <pubDate>Fri, 28 Jul 2023 20:19:48 +0800</pubDate>
       
       <guid>https://4xu.xyz/tags/%E6%89%93%E6%A1%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>打牌</title>
-      <link>https://4xu.xyz/tags/%E6%89%93%E7%89%8C/</link>
-      <pubDate>Fri, 28 Jul 2023 20:19:48 +0800</pubDate>
-      
-      <guid>https://4xu.xyz/tags/%E6%89%93%E7%89%8C/</guid>
       <description></description>
     </item>
     

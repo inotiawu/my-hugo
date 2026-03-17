@@ -1,0 +1,2681 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='cg大厂'><title>最终幻想10</title>
+
+<link rel='canonical' href='https://4xu.xyz/p/ff10/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='最终幻想10'>
+<meta property='og:description' content='cg大厂'>
+<meta property='og:url' content='https://4xu.xyz/p/ff10/'>
+<meta property='og:site_name' content='四序、片羽与摸鱼力学'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='单机' /><meta property='article:tag' content='剧情' /><meta property='article:tag' content='悲' /><meta property='article:tag' content='迷宫' /><meta property='article:tag' content='jrpg' /><meta property='article:tag' content='回合制' /><meta property='article:published_time' content='2026-03-13T20:19:48&#43;08:00'/><meta property='article:modified_time' content='2026-03-13T20:19:48&#43;08:00'/><meta property='og:image' content='https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152009.jpg' />
+<meta name="twitter:title" content="最终幻想10">
+<meta name="twitter:description" content="cg大厂"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152009.jpg' />
+    <link rel="shortcut icon" href="https://gh.4xu.xyz/d/team/blogimage/img/20210417204733.jpg" />
+<meta name="baidu-site-verification" content="code-QYxntsyr97" />
+<meta name="msvalidate.01" content="3618B3E20A42DC03E34A10CD209C573A" />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    <img src="https://gh.4xu.xyz/d/team/blogimage/img/20210417204733.jpg" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://4xu.xyz">四序、片羽与摸鱼力学</a></h1>
+        <h2 class="site-description">凡心所向,素履以往</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/%e7%94%9f%e6%b4%bb/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <line x1="9" y1="10" x2="9.01" y2="10" />
+  <line x1="15" y1="10" x2="15.01" y2="10" />
+  <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+</svg>
+                
+                <span>生活</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/%e8%ae%be%e8%ae%a1%e7%bb%98%e7%94%bb/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-beizer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="14" width="4" height="4" rx="1" />
+  <rect x="17" y="14" width="4" height="4" rx="1" />
+  <rect x="10" y="6" width="4" height="4" rx="1" />
+  <path d="M10 8.5a6 6 0 0 0 -5 5.5" />
+  <path d="M14 8.5a6 6 0 0 1 5 5.5" />
+  <line x1="10" y1="8" x2="4" y2="8" />
+  <line x1="20" y1="8" x2="14" y2="8" />
+  <circle cx="3" cy="8" r="1" />
+  <circle cx="21" cy="8" r="1" />
+</svg>
+                
+                <span>设计绘画</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/%e6%b8%b8%e6%88%8f%e4%b8%8e%e8%bd%af%e4%bb%b6/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="2" y="6" width="20" height="12" rx="2" />
+  <path d="M6 12h4m-2 -2v4" />
+  <line x1="15" y1="11" x2="15" y2="11.01" />
+  <line x1="18" y1="13" x2="18" y2="13.01" />
+</svg>
+                
+                <span>游戏与软件</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/index.xml'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                
+                <span>RSS</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://4xu.xyz" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/ff10/">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152009.jpg" loading="lazy" alt="Featured image of post 最终幻想10" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B8%B8%E6%88%8F%E4%B8%8E%E8%BD%AF%E4%BB%B6/" >
+                游戏与软件
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/ff10/">最终幻想10</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        cg大厂
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 13, 2026</time>
+    </footer></div>
+</header>
+
+    <div id="prevArrow"      onclick="prevImage()">&lt;</div>
+ <div id="nextArrow"        onclick="nextImage()">&gt;</div>
+
+<div id="overlay">
+    <img id="enlargedImg" />
+  </div>
+
+<section class="article-content">
+    <p>ff系列算是比较早接触的jrpg游戏，由于cg加成关系，每一部都印象深刻。上次完盘还是久远的ff核心危机。曾经看过ff10评论，只知道是个略带伤感的故事。</p>
+<hr>
+<p>光怪陆离的科技城市札纳尔坎德中，水斗球选手提达正在备战下一场比赛，行至半途，提达抬头仰望屏幕中杰克特，新闻播放著名选手杰克特已失踪多年。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152010.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152011.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>比赛正酣，一只形似鲲鲲巨大怪物突袭破坏了城市。大叔奥隆屹立残壁断垣间，向提达发表一通谜语人话语后，要求他跟随自己。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152012.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152013.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152014.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152015.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>提达目睹一个小矮子消失奇异现象，他思索着谜语人提醒言语：要开始了。来不及多想，提达与隆并肩抗击衍生怪物，奔向伴随怪物出现的悬浮水球。爆炸轰鸣声中，奥隆将提达投掷进水球内。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152016.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152017.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152018.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>苏醒的提达游荡于残破遗迹，随后被一群装束奇异的人包围了。提达虽协助其中一员迎战怪物，但一行人对待听不懂语言的提达称不上友善，他被挟持进货物船中。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152019.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152020.jpg" width="" alt="  视角明确" />
+    
+    
+    <figcaption>
+        <p>
+          视角明确
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152021.jpg" width="" alt="   秘之升级" />
+    
+    
+    <figcaption>
+        <p>
+           秘之升级
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>这群人中少女硫克能与提达交流，对他称来自札纳尔坎德的举动，认为是遭受怪物辛的毒害，因为那座城市早已在1000年前毁灭了，提达努力接受现状。怪物辛游弋货船附近，引发的海浪迫使提达再次被水淹没。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314152022.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<h5 id="比赛德岛">比赛德岛</h5>
+<details>
+ <summary></summary>
+提达流落到比赛德岛上，他所展示的水球技艺，吸引了小岛上选手们的注意。提达假装自己受辛波及失去记忆，从队长瓦卡口中探听到，自己城市确实早已灭亡。提达幻想着再度见到辛，或许凭此重返家园，但那之前，在残破的世界活着才是最重要的。出于两个时代共同联系事物水球，提达答应了瓦卡邀请入队。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153844.jpg" width="" alt="  你还能再表演那个，就那个" />
+    
+    
+    <figcaption>
+        <p>
+          你还能再表演那个，就那个
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153846.jpg" width="" alt="  男上加男" />
+    
+    
+    <figcaption>
+        <p>
+          男上加男
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153845.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153847.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>史匹拉人不甘心屈服于辛破灭之下，自发组建讨伐队，可是这种讨伐队也只是防止破坏，而非对付辛。提达疑惑谁来抵御怪物，答案对谁而言都是常识，于是嘱咐他去寺庙祈求恢复记忆。</p>
+<p style="color:grey;font-size:14px;text-align:center">着装还蛮清凉</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153848.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153849.jpg" width=""  />
+    
+    
+</figure>
+
+<p>~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153850.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153851.jpg" width="80%" alt="  禁止大哥哥" />
+    
+    
+    <figcaption>
+        <p>
+          禁止大哥哥
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>寺庙内，提达认识到一种新的职业召唤士能守护人民。瓦卡担忧预备召唤士迟迟未通过试炼，提达不顾试炼房不得擅入规矩，径直闯了进去。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153852.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>提达与瓦卡通过迷宫的同时，已成为召唤士的优娜也恰好走出，召唤士的奇异力量令提达深感不可思议。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153853.jpg" width="" alt="  开启神烦迷宫之旅" />
+    
+    
+    <figcaption>
+        <p>
+          开启神烦迷宫之旅
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153854.jpg" width="" alt=" 优娜究竟做了什么才会这么汗涔涔（捂脸）" />
+    
+    
+    <figcaption>
+        <p>
+         优娜究竟做了什么才会这么汗涔涔（捂脸）
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153855.jpg" width="80%" alt="  弱鸡" />
+    
+    
+    <figcaption>
+        <p>
+          弱鸡
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>深夜，提达听见护卫露露与瓦卡关于他的争执，他询问详情，得知瓦卡的弟弟参与讨伐队身故，于是瓦卡成为护卫，索求向辛挥刃。多次照拂提达，因为他的容貌与弟弟相仿。</p>
+<p style="color:grey;font-size:14px;text-align:center">视角明确</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153856.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153858.jpg" width=""  />
+    
+    
+</figure>
+
+<p>~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153857.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+</details>
+<h5 id="基利卡">基利卡</h5>
+<details>
+ <summary></summary>
+参加比赛将近，提达跟随他们旅行。优娜出身高贵，是击败过辛大召唤士的女儿，她提及父亲护卫杰克特与提达父亲名字相同。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153859.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>航行途中，辛悍然侵入原本宁静海面，船上众人无力阻止怪物的肆虐，眼睁睁它几乎摧毁附近整座小岛。曾幻想过能回乡的提达，面对小岛的惨列与少女的决意，终于认清无法逃避的现实。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153900.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153901.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>祈望亡者安宁，需要召唤士献舞平息残念。提达遥望余晖的舞姿，感慨灾厄下的仪式显得神秘又夹杂着可怕。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153902.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314153903.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155030.jpg" width="" alt="  prprpr" />
+    
+    
+    <figcaption>
+        <p>
+          prprpr
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155031.jpg" width="" alt=" 这就是勇者" />
+    
+    
+    <figcaption>
+        <p>
+         这就是勇者
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>寺庙前后都有人跳脸，其他召唤士对优娜护卫人数质疑嘲讽，她一反常态，态度坚决反驳了黑皮召唤士。优娜诚邀提达成为护卫，这种性命托付的信赖，却加剧提达的犹豫不决。神庙一行中，提达也深刻认识到，反抗辛历程中不断的牺牲。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155032.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155033.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155034.jpg" width="80%"  />
+    
+    
+</figure>
+
+</details>
+<h5 id="路加">路加</h5>
+<details>
+ <summary></summary>
+提达与优娜谈及，他们都活在父亲名声阴影下，但她也对父亲所创造的伟业引以为傲。提达三人闻讯奥隆的现身，探查中途因卷入基马利同族纷争，疏忽下优娜被阿尔贝德族人劫走。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155037.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155036.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155039.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155040.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155041.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>提达等人救出优娜，但事端似乎没那么简单，优娜也拥有阿尔贝德族血统。露露希望提达向瓦卡隐瞒这个秘密，因为他相当歧视阿尔贝德人。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155043.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155044.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>瓦卡险胜对手同时，周遭突然闯入大量怪物，奥隆展露身手，与提达等人迎击怪物。提达感到惊讶的是，从他人口中确认，奥隆也是大召唤士的护卫。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155038.jpg" width="" alt="  这么长水球比赛教程，我慌了" />
+    
+    
+    <figcaption>
+        <p>
+          这么长水球比赛教程，我慌了
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155042.jpg" width="" alt="   不仅瓦卡力竭，屏幕外的我也力竭了" />
+    
+    
+    <figcaption>
+        <p>
+           不仅瓦卡力竭，屏幕外的我也力竭了
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314155049.jpg" width="" alt="  绝了这比赛" />
+    
+    
+    <figcaption>
+        <p>
+          绝了这比赛
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160206.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160207.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>会场陷入越发混乱时，瓜德一族首领蟑螂头的召唤兽一举消灭所有怪物。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160208.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160209.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160210.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>奥隆叙述过去和大召唤士、杰克特协力打倒了辛，但杰克特却沦为新的辛。听闻噩耗的提达茫然无措，优娜见状，诉说自己等人哪怕悲伤，为了回应他人期待，也要故作笑颜。这份坚强无疑感染了提达，他逐渐镇定下来。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160211.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160212.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160214.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314160215.jpg" width=""  />
+    
+    
+</figure>
+</p>
+</details>
+<h5 id="密亨">密亨</h5>
+<details>
+ <summary></summary>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201256.jpg" width="" alt="se社宠  " />
+    
+    
+    <figcaption>
+        <p>
+        se社宠  
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201257.jpg" width="" alt="    这玩意还真不好打" />
+    
+    
+    <figcaption>
+        <p>
+            这玩意还真不好打
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>下一座神庙路上，他们听闻讨伐队不遵循耶朋教义，冒然利用机械准备针对辛。提达不解为何辛会不断复活，回复罪孽一词太过广泛，无从探寻真相。
+唯有终极召唤才能毁灭辛，而授予伟力的旅途终点，恰恰是已破灭故乡札纳尔坎德。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201258.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201300.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201301.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>教会维护者的蟑螂头也认可这次作战，瓦卡对违背教义行径愤愤不平。
+讨伐队一员愧疚向瓦卡致歉，正是他邀请了弟弟参与讨伐队，弟弟生前的愿景令众人默然许久。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201302.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201304.jpg" width="80%" alt="  这位黑小哥声音好像纳兹灭" />
+    
+    
+    <figcaption>
+        <p>
+          这位黑小哥声音好像纳兹灭
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201306.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201307.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201308.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>作战开始，战况激烈却异常短暂，辛迸发的光柱横扫下，集结军队和机械武器顷刻间化为灰烬。死伤殆尽驱使提达徒劳追索辛。
+奥隆的一番话点醒提达，辛频繁出没于他附近缘由：期望能死在儿子手中摆脱折磨。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201309.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201310.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201311.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201312.jpg" width=""  />
+    
+    
+</figure>
+
+~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201315.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201952.jpg" width="80%" alt="  鸡鸡落泪" />
+    
+    
+    <figcaption>
+        <p>
+          鸡鸡落泪
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>神庙中，其他召唤士提醒众人，许多召唤士下落不明。渡过幻光河，众人讲述历史，昔日机械战争都掩埋于辛的破坏中。随后优娜一度被阿尔贝德族机械劫走，机械内蹦出的却是硫克，她也决意追随优娜。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201953.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201954.jpg" width="" alt="  很迷" />
+    
+    
+    <figcaption>
+        <p>
+          很迷
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201955.jpg" width="" alt="  占空" />
+    
+    
+    <figcaption>
+        <p>
+          占空
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201956.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201957.jpg" width=""  />
+    
+    
+</figure>
+</p>
+</details>
+<h5 id="瓜德萨拉姆">瓜德萨拉姆</h5>
+<details>
+ <summary></summary>
+瓜德族内，蟑螂头带领众人欣赏了一出3d电影，随后他托辞人心所向试图说服优娜，露骨暗示联姻。优娜态度模棱两可，决定出发异界拜访自己父亲。异界并非灵魂所在，而是过去回忆的聚合，所以硫克不打算进入。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201958.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314201959.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202000.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202001.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202002.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202004.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202005.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202006.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>瑰奇的异界内，优娜似乎下定了决心，返回中途，突遭的前任瓜德族长遗魂，却催使她改变心意。队伍习以为常义务与责任说法，提达失落于自己的格格不入。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202007.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202008.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202009.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202010.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202011.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202946.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>深林内，提达捡取的幻光球，记载着昔日英雄们点滴。奥隆讲述旅途中，杰克特思想转变与对抗辛觉悟。提达分析着父亲的想法，顿时感同身受。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202948.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202949.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202950.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>众人查看前任族长所化的幻光球，其中记录着族长关于蟑螂头谋杀不详遗言。一行人恍然优娜为何会结婚，匆忙赶至她身边。
+蟑螂头败落，瓜德族人仍旧冥顽不灵，派人追杀队伍。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202953.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202954.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314202955.jpg" width="80%"  />
+    
+    
+</figure>
+
+</details>
+<h5 id="圣贝薇尔宫">圣贝薇尔宫</h5>
+<details>
+ <summary></summary>
+<p style="color:grey;font-size:14px;text-align:center">恶意满满</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203332.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203334.jpg" width=""  />
+    
+    
+</figure>
+
+<p>优娜对自己导致蟑螂头身故，手段太偏激。几人讨论下，优娜计划拜望教会高层解释缘由。辛冲击潜藏地，众人分离至沙漠中，硫克分析优娜可能被族人接走，他们朝阿尔贝德族家园方向启程。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203333.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203335.jpg" width="" alt="  这沙雕真不好对付" />
+    
+    
+    <figcaption>
+        <p>
+          这沙雕真不好对付
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203336.jpg" width="" alt="  瓦卡之凝视" />
+    
+    
+    <figcaption>
+        <p>
+          瓦卡之凝视
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+<p>沙漠深处阿尔贝德驻地，此时却遭受着教会瓜德族的报复。提达也终于获知，终极召唤施展原来需要召唤士的生命，提达懊悔昔日对优娜所说和平未来憧憬，完全没顾虑她的心情。面对优娜亲属的质问，提达虽然无法阻拦旅途，但他决心不让优娜死去。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203337.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203338.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203339.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203340.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203341.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203342.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>死去的蟑螂头灵魂尚未消散，其执念导致优娜困于教会总部。提达等人救援不成反被教会作为筹码，要挟优娜完成婚约，她驱动召唤兽的力量脱身，然而稍后众人再度被抓。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203343.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203344.jpg" width="80%" alt="  这条沙龙快死还会反扑" />
+    
+    
+    <figcaption>
+        <p>
+          这条沙龙快死还会反扑
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203345.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203346.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p style="color:grey;font-size:14px;text-align:center">有点像杨采妮</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203347.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203348.jpg" width=""  />
+    
+    
+</figure>
+
+<p>~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203349.jpg" width="80%" alt="  大人时代变了" />
+    
+    
+    <figcaption>
+        <p>
+          大人时代变了
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203350.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314203351.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204035.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204036.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204037.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204039.jpg" width="" alt="  吐血" />
+    
+    
+    <figcaption>
+        <p>
+          吐血
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204038.jpg" width="" alt="   玩这迷宫时我的神情" />
+    
+    
+    <figcaption>
+        <p>
+           玩这迷宫时我的神情
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204040.jpg" width="80%" alt="  老熟了" />
+    
+    
+    <figcaption>
+        <p>
+          老熟了
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>优娜承受教会审判，却连主教也站在蟑螂头身边，因为他亦是亡者。主教嚣言牺牲所带来的轮回才是教义真谛。
+提达腹诽尽是这些消极破事，奥隆则喟叹死亡笼罩在整个史匹拉。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204041.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204042.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>一行人被逼入下水道，好不容易汇合的众人又横遭蟑螂头截击，蟑螂头暴露目的，妄图掌握死亡力量保留世界。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204043.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204044.jpg" width=""  />
+    
+    
+</figure>
+</p>
+</details>
+<h5 id="札纳尔坎德">札纳尔坎德</h5>
+<details>
+ <summary></summary>
+从教会逃出后，优娜闷闷不乐，提达不忍她难过，劝说干脆放弃，两人遐想将来的平静生活，优娜却落泪不止，无法割舍长期心愿，提达表露心意安慰，少女重新确认决心，提达勉力担保绝不会让她死去。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204045.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204046.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204047.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204048.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204049.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p style="color:grey;font-size:14px;text-align:center">无敌的阎魔刀</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204050.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204053.jpg" width=""  />
+    
+    
+</figure>
+
+<p>中途虽有不少人阻扰，但毅力促使他们一步步靠近旅途终点。与硫克逐渐焦躁相反，提达盲目乐观，信任终点必定会拥有两全机遇。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204051.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204052.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204054.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204848.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204849.jpg" width="80%" alt="  还会僵尸攻击" />
+    
+    
+    <figcaption>
+        <p>
+          还会僵尸攻击
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>数不尽的死去祈祷者聚集在此地，汇聚灵魂风暴极为壮观。目睹此景的提达，却坠入幻觉中，心中震动于自己原来是祈祷者梦境。
+曾经札纳尔坎德与贝尔德交战，由于不敌机械力量，尚存的祈祷者希冀留存幻象，以召唤构筑了巨大梦境札纳尔坎德。时光荏苒，倍觉疲倦的他们，指望提达能结束梦境，但也意味着提达的消失。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204850.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204851.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204852.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204853.jpg" width="80%" alt="  哪怕快完了，也要小游戏" />
+    
+    
+    <figcaption>
+        <p>
+          哪怕快完了，也要小游戏
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+<p>醒来的提达将秘密深埋心中，若无其事继续旅程。札纳尔坎德已经清晰可见，众人沉默踏上最后的一段路时，提达捡回优娜遗落的幻光球，记录着她留下来衷心祝福。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204854.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204855.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204856.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314204857.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210109.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210110.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210111.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210112.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210113.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>出乎意料的是，终极召唤必须由首任大召唤士授予，而且不仅要牺牲召唤士，还需要一名护卫肉体承载召唤兽替身，众人纷纷主动请缨，愿意承担这个重任。
+唯独奥隆默然看着，大厅突现过去幻影，铭记了奥隆不舍与无能为力，以及友人的坚决。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210114.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210119.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210115.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210116.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210117.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210118.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>大召唤士揭露辛无法消灭真相，世界只能苟延残喘，优娜无法认同一代代人牺牲换取却是虚伪的希望。
+在伙伴牺牲后，受骗的奥隆曾向大召唤士愤怒挥刃无奈被打败，如今他发出号召让大家抉择道路，众人一致裁定对抗大召唤士，另寻灭亡辛的方法。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210120.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210121.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210734.jpg" width="80%"  />
+    
+    
+</figure>
+
+~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210735.jpg" width="80%" alt="  这玩意打三轮真不好打" />
+    
+    
+    <figcaption>
+        <p>
+          这玩意打三轮真不好打
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+</details>
+<h5 id="end">End</h5>
+<details>
+ <summary></summary>
+结合教会与祈祷者透露的信息，解决辛的前提必须击溃它的肉身，最后消灭掉自发召唤的耶朋诅咒。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210737.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210739.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210740.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210741.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210742.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>作战开启，众人成功进入到辛的体内，先怼掉阴魂不散的蟑螂头。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210743.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210744.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210745.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210746.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210747.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314210748.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p style="color:grey;font-size:14px;text-align:center">14万血，阎魔刀救我</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211557.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211735.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211736.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211737.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211738.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211739.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211740.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211741.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>深处，众人看到了等候多时的杰克特，提达尚未来得及告别，杰克特化身的怪物席卷而来。</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211742.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211743.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p style="color:grey;font-size:14px;text-align:center">老爹不愧是老爹啊</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211744.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211745.jpg" width=""  />
+    
+    
+</figure>
+
+<p>大战之后，为了禁止辛复活，优娜借助祈祷者的力量，逐个抹灭掉一路相随召唤兽，此时提达终于吐出秘密，自己即将消失。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211746.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211747.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211750.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211751.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211752.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314211753.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212407.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212408.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212409.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212410.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p style="color:grey;font-size:14px;text-align:center">太美惹</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212411.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212412.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212413.jpg" width=""  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212414.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212415.jpg" width=""  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212416.jpg" width="80%"  />
+    
+    
+</figure>
+
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212417.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212418.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212419.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212420.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>二年后，一则提达容貌相似的录像，触动优娜的心绪，小队伍再次集合。。。
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212422.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212423.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212424.jpg" width=""  />
+    
+    
+</figure>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212425.jpg" width=""  />
+    
+    
+</figure>
+</p>
+<p>~
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212426.jpg" width="80%"  />
+    
+    
+</figure>
+</p>
+
+<figure >
+    
+        <img src="" class="lazyload" alt="jpg" onclick="enlargeImage(this)" data-src="https://gh.4xu.xyz/d/team/imgtest/game/ff10/20260314212845.jpg" width="80%" alt="  虽然想玩下去，但我看到脸模刹那，ff10结束！！" />
+    
+    
+    <figcaption>
+        <p>
+          虽然想玩下去，但我看到脸模刹那，ff10结束！！
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+</details>
+<hr>
+<p>由于发售时间年代久远，存在不少jprg毛病，特别是后期难度陡然拔高。虽然模型粗犷，其音乐与cg透露着一种特别精致感，这也算是se社一贯的特色了。剧情方面没什么好讲，一开始便知道偏于伤怀方面，完美契合了游戏氛围。</p>
+
+    
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%8D%95%E6%9C%BA/">单机</a>
+        
+            <a href="/tags/%E5%89%A7%E6%83%85/">剧情</a>
+        
+            <a href="/tags/%E6%82%B2/">悲</a>
+        
+            <a href="/tags/%E8%BF%B7%E5%AE%AB/">迷宫</a>
+        
+            <a href="/tags/jrpg/">jrpg</a>
+        
+            <a href="/tags/%E5%9B%9E%E5%90%88%E5%88%B6/">回合制</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    
+     <section class="article-view">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+</svg>
+        <span id="busuanzi_value_page_pv"></span>
+        <sapn style="margin-left: 5px">
+                
+                VIEWS
+         </sapn>
+      </section></footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+    (function() {
+      var current_progress = document.getElementsByClassName("current-progress");
+      var dynamic = document.getElementsByClassName("dynamic");
+       
+       for(let r=dynamic.length-1;r>-1;r--) {
+        dynamic[r].style.width=current_progress[r].innerHTML + "%";
+          dynamic[r].setAttribute("aria-valuenow",current_progress[r].innerHTML);
+          dynamic[r].innerHTML=current_progress[r].innerHTML+ "% Complete";
+       }
+      
+    }());
+</script>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/xianjian5qz/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/xianjian5qz/20250526151811.jpg" loading="lazy" data-key="xianjian5qz" data-hash="https://gh.4xu.xyz/d/team/imgtest/game/xianjian5qz/20250526151811.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">仙剑奇侠传五前传</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/%E7%A5%9E%E7%95%8C%E5%8E%9F%E7%BD%AA2/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/DivinitySin2/20240525182124.jpg" loading="lazy" data-key="" data-hash="https://gh.4xu.xyz/d/team/imgtest/game/DivinitySin2/20240525182124.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">神界原罪2</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/xianjian4/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/xianjian4/20231007175340.jpg" loading="lazy" data-key="xianjian4" data-hash="https://gh.4xu.xyz/d/team/imgtest/game/xianjian4/20231007175340.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">仙剑奇侠传四</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/metrolast/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/metrolast/20250731142532.jpg" loading="lazy" data-key="metrolast" data-hash="https://gh.4xu.xyz/d/team/imgtest/game/metrolast/20250731142532.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">地铁：最后的曙光</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/ac4/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://gh.4xu.xyz/d/team/imgtest/game/ac4/20250705150126.jpg" loading="lazy" data-key="ac4" data-hash="https://gh.4xu.xyz/d/team/imgtest/game/ac4/20250705150126.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">刺客信条4</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+     
+  
+  <script src='https://npm.elemecdn.com/@waline/client/dist/Waline.min.js'></script>
+  
+<div id="waline"></div>
+
+
+<script>
+    new Waline({
+      el: '#waline',
+      path: location.pathname,
+      serverURL: 'https://co.4xu.xyz/',
+      avatarCDN: 'https://gravatar.4xu.xyz/avatar/',
+      
+    });
+    
+    
+    
+    
+    
+    
+  </script>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setwalineTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 四序、片羽与摸鱼力学
+    </section>
+    <section id="htmer_time" class="copyright">
+    </section>
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://code.bdstatic.com/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://code.bdstatic.com/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://code.bdstatic.com/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://code.bdstatic.com/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://code.bdstatic.com/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        var create_time = Math.round(new Date(Date.UTC(2021, 03, 23, 11, 42, 23)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = '博客已经运行了：' + currentTime[0] + '年 ' + currentTime[1] + '天 '
+                + currentTime[2] + '时 ' + currentTime[3] + '分 ' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }    setInterval(setTime, 1000);
+</script>
+
+<script>
+     
+
+!function(e){var t=function(u,D,f){"use strict";var k,H;if(function(){var e;var t={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",fastLoadedClass:"ls-is-cached",iframeLoadMode:0,srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:true,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:true,ricTimeout:0,throttleDelay:125};H=u.lazySizesConfig||u.lazysizesConfig||{};for(e in t){if(!(e in H)){H[e]=t[e]}}}(),!D||!D.getElementsByClassName){return{init:function(){},cfg:H,noSupport:true}}var O=D.documentElement,i=u.HTMLPictureElement,P="addEventListener",$="getAttribute",q=u[P].bind(u),I=u.setTimeout,U=u.requestAnimationFrame||I,o=u.requestIdleCallback,j=/^picture$/i,r=["load","error","lazyincluded","_lazyloaded"],a={},G=Array.prototype.forEach,J=function(e,t){if(!a[t]){a[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")}return a[t].test(e[$]("class")||"")&&a[t]},K=function(e,t){if(!J(e,t)){e.setAttribute("class",(e[$]("class")||"").trim()+" "+t)}},Q=function(e,t){var a;if(a=J(e,t)){e.setAttribute("class",(e[$]("class")||"").replace(a," "))}},V=function(t,a,e){var i=e?P:"removeEventListener";if(e){V(t,a)}r.forEach(function(e){t[i](e,a)})},X=function(e,t,a,i,r){var n=D.createEvent("Event");if(!a){a={}}a.instance=k;n.initEvent(t,!i,!r);n.detail=a;e.dispatchEvent(n);return n},Y=function(e,t){var a;if(!i&&(a=u.picturefill||H.pf)){if(t&&t.src&&!e[$]("srcset")){e.setAttribute("srcset",t.src)}a({reevaluate:true,elements:[e]})}else if(t&&t.src){e.src=t.src}},Z=function(e,t){return(getComputedStyle(e,null)||{})[t]},s=function(e,t,a){a=a||e.offsetWidth;while(a<H.minSize&&t&&!e._lazysizesWidth){a=t.offsetWidth;t=t.parentNode}return a},ee=function(){var a,i;var t=[];var r=[];var n=t;var s=function(){var e=n;n=t.length?r:t;a=true;i=false;while(e.length){e.shift()()}a=false};var e=function(e,t){if(a&&!t){e.apply(this,arguments)}else{n.push(e);if(!i){i=true;(D.hidden?I:U)(s)}}};e._lsFlush=s;return e}(),te=function(a,e){return e?function(){ee(a)}:function(){var e=this;var t=arguments;ee(function(){a.apply(e,t)})}},ae=function(e){var a;var i=0;var r=H.throttleDelay;var n=H.ricTimeout;var t=function(){a=false;i=f.now();e()};var s=o&&n>49?function(){o(t,{timeout:n});if(n!==H.ricTimeout){n=H.ricTimeout}}:te(function(){I(t)},true);return function(e){var t;if(e=e===true){n=33}if(a){return}a=true;t=r-(f.now()-i);if(t<0){t=0}if(e||t<9){s()}else{I(s,t)}}},ie=function(e){var t,a;var i=99;var r=function(){t=null;e()};var n=function(){var e=f.now()-a;if(e<i){I(n,i-e)}else{(o||r)(r)}};return function(){a=f.now();if(!t){t=I(n,i)}}},e=function(){var v,m,c,h,e;var y,z,g,p,C,b,A;var n=/^img$/i;var d=/^iframe$/i;var E="onscroll"in u&&!/(gle|ing)bot/.test(navigator.userAgent);var _=0;var w=0;var M=0;var N=-1;var L=function(e){M--;if(!e||M<0||!e.target){M=0}};var x=function(e){if(A==null){A=Z(D.body,"visibility")=="hidden"}return A||!(Z(e.parentNode,"visibility")=="hidden"&&Z(e,"visibility")=="hidden")};var W=function(e,t){var a;var i=e;var r=x(e);g-=t;b+=t;p-=t;C+=t;while(r&&(i=i.offsetParent)&&i!=D.body&&i!=O){r=(Z(i,"opacity")||1)>0;if(r&&Z(i,"overflow")!="visible"){a=i.getBoundingClientRect();r=C>a.left&&p<a.right&&b>a.top-1&&g<a.bottom+1}}return r};var t=function(){var e,t,a,i,r,n,s,o,l,u,f,c;var d=k.elements;if((h=H.loadMode)&&M<8&&(e=d.length)){t=0;N++;for(;t<e;t++){if(!d[t]||d[t]._lazyRace){continue}if(!E||k.prematureUnveil&&k.prematureUnveil(d[t])){R(d[t]);continue}if(!(o=d[t][$]("data-expand"))||!(n=o*1)){n=w}if(!u){u=!H.expand||H.expand<1?O.clientHeight>500&&O.clientWidth>500?500:370:H.expand;k._defEx=u;f=u*H.expFactor;c=H.hFac;A=null;if(w<f&&M<1&&N>2&&h>2&&!D.hidden){w=f;N=0}else if(h>1&&N>1&&M<6){w=u}else{w=_}}if(l!==n){y=innerWidth+n*c;z=innerHeight+n;s=n*-1;l=n}a=d[t].getBoundingClientRect();if((b=a.bottom)>=s&&(g=a.top)<=z&&(C=a.right)>=s*c&&(p=a.left)<=y&&(b||C||p||g)&&(H.loadHidden||x(d[t]))&&(m&&M<3&&!o&&(h<3||N<4)||W(d[t],n))){R(d[t]);r=true;if(M>9){break}}else if(!r&&m&&!i&&M<4&&N<4&&h>2&&(v[0]||H.preloadAfterLoad)&&(v[0]||!o&&(b||C||p||g||d[t][$](H.sizesAttr)!="auto"))){i=v[0]||d[t]}}if(i&&!r){R(i)}}};var a=ae(t);var S=function(e){var t=e.target;if(t._lazyCache){delete t._lazyCache;return}L(e);K(t,H.loadedClass);Q(t,H.loadingClass);V(t,B);X(t,"lazyloaded")};var i=te(S);var B=function(e){i({target:e.target})};var T=function(e,t){var a=e.getAttribute("data-load-mode")||H.iframeLoadMode;if(a==0){e.contentWindow.location.replace(t)}else if(a==1){e.src=t}};var F=function(e){var t;var a=e[$](H.srcsetAttr);if(t=H.customMedia[e[$]("data-media")||e[$]("media")]){e.setAttribute("media",t)}if(a){e.setAttribute("srcset",a)}};var s=te(function(t,e,a,i,r){var n,s,o,l,u,f;if(!(u=X(t,"lazybeforeunveil",e)).defaultPrevented){if(i){if(a){K(t,H.autosizesClass)}else{t.setAttribute("sizes",i)}}s=t[$](H.srcsetAttr);n=t[$](H.srcAttr);if(r){o=t.parentNode;l=o&&j.test(o.nodeName||"")}f=e.firesLoad||"src"in t&&(s||n||l);u={target:t};K(t,H.loadingClass);if(f){clearTimeout(c);c=I(L,2500);V(t,B,true)}if(l){G.call(o.getElementsByTagName("source"),F)}if(s){t.setAttribute("srcset",s)}else if(n&&!l){if(d.test(t.nodeName)){T(t,n)}else{t.src=n}}if(r&&(s||l)){Y(t,{src:n})}}if(t._lazyRace){delete t._lazyRace}Q(t,H.lazyClass);ee(function(){var e=t.complete&&t.naturalWidth>1;if(!f||e){if(e){K(t,H.fastLoadedClass)}S(u);t._lazyCache=true;I(function(){if("_lazyCache"in t){delete t._lazyCache}},9)}if(t.loading=="lazy"){M--}},true)});var R=function(e){if(e._lazyRace){return}var t;var a=n.test(e.nodeName);var i=a&&(e[$](H.sizesAttr)||e[$]("sizes"));var r=i=="auto";if((r||!m)&&a&&(e[$]("src")||e.srcset)&&!e.complete&&!J(e,H.errorClass)&&J(e,H.lazyClass)){return}t=X(e,"lazyunveilread").detail;if(r){re.updateElem(e,true,e.offsetWidth)}e._lazyRace=true;M++;s(e,t,r,i,a)};var r=ie(function(){H.loadMode=3;a()});var o=function(){if(H.loadMode==3){H.loadMode=2}r()};var l=function(){if(m){return}if(f.now()-e<999){I(l,999);return}m=true;H.loadMode=3;a();q("scroll",o,true)};return{_:function(){e=f.now();k.elements=D.getElementsByClassName(H.lazyClass);v=D.getElementsByClassName(H.lazyClass+" "+H.preloadClass);q("scroll",a,true);q("resize",a,true);q("pageshow",function(e){if(e.persisted){var t=D.querySelectorAll("."+H.loadingClass);if(t.length&&t.forEach){U(function(){t.forEach(function(e){if(e.complete){R(e)}})})}}});if(u.MutationObserver){new MutationObserver(a).observe(O,{childList:true,subtree:true,attributes:true})}else{O[P]("DOMNodeInserted",a,true);O[P]("DOMAttrModified",a,true);setInterval(a,999)}q("hashchange",a,true);["focus","mouseover","click","load","transitionend","animationend"].forEach(function(e){D[P](e,a,true)});if(/d$|^c/.test(D.readyState)){l()}else{q("load",l);D[P]("DOMContentLoaded",a);I(l,2e4)}if(k.elements.length){t();ee._lsFlush()}else{a()}},checkElems:a,unveil:R,_aLSL:o}}(),re=function(){var a;var n=te(function(e,t,a,i){var r,n,s;e._lazysizesWidth=i;i+="px";e.setAttribute("sizes",i);if(j.test(t.nodeName||"")){r=t.getElementsByTagName("source");for(n=0,s=r.length;n<s;n++){r[n].setAttribute("sizes",i)}}if(!a.detail.dataAttr){Y(e,a.detail)}});var i=function(e,t,a){var i;var r=e.parentNode;if(r){a=s(e,r,a);i=X(e,"lazybeforesizes",{width:a,dataAttr:!!t});if(!i.defaultPrevented){a=i.detail.width;if(a&&a!==e._lazysizesWidth){n(e,r,i,a)}}}};var e=function(){var e;var t=a.length;if(t){e=0;for(;e<t;e++){i(a[e])}}};var t=ie(e);return{_:function(){a=D.getElementsByClassName(H.autosizesClass);q("resize",t)},checkElems:t,updateElem:i}}(),t=function(){if(!t.i&&D.getElementsByClassName){t.i=true;re._();e._()}};return I(function(){H.init&&t()}),k={cfg:H,autoSizer:re,loader:e,init:t,uP:Y,aC:K,rC:Q,hC:J,fire:X,gW:s,rAF:ee}}(e,e.document,Date);e.lazySizes=t,"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:{});
+</script>
+
+<script>
+var images = []; 
+var prevArrow = document.getElementById("prevArrow");
+var nextArrow = document.getElementById("nextArrow");
+
+var imgElements = document.getElementsByTagName("img");
+for (var i = 0; i < imgElements.length; i++) {
+  images.push(imgElements[i].getAttribute("data-src"));
+}
+
+var currentIndex  = 0;
+
+function enlargeImage(img) {
+  var overlay = document.getElementById("overlay");
+  var enlargedImg = document.getElementById("enlargedImg");
+  enlargedImg.src = img.getAttribute("src");
+  prevArrow.style.display = "flex";
+  nextArrow.style.display = "flex";
+  overlay.style.display = "flex";
+  
+  currentIndex  = images.indexOf(img.getAttribute("src"));
+}
+
+function prevImage(){
+  
+  var img = document.getElementById("enlargedImg");
+  currentIndex  = images.indexOf(img.getAttribute("src"));
+  img.src = images[currentIndex-1];
+ 
+}
+
+function nextImage(){
+  
+  var img = document.getElementById("enlargedImg");
+  currentIndex  = images.indexOf(img.getAttribute("src"));
+  img.src = images[currentIndex+1];
+ 
+}
+
+document.getElementById("overlay").addEventListener("click", function () {
+  document.getElementById("overlay").style.display = "none";
+  prevArrow.style.display = "none";
+  nextArrow.style.display = "none";
+});
+</script>
+    </body>
+</html>
